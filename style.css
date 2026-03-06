@@ -225,7 +225,7 @@ body::before {
 
 .gen-quote { font-size: 12px; color: var(--accent-2); font-style: italic; }
 
-.gen-history { max-width: 520px; margin: 0 auto; }
+.gen-history { max-width: 520px; margin: 0 auto; text-align: center; }
 
 .gen-history-title {
   font-size: 11px; color: var(--muted); text-transform: lowercase;
