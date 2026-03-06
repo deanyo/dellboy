@@ -132,7 +132,24 @@ const delQuotes = [
   "Cushty!",
   "Bonjour!",
   "You plonker, Rodney!",
-  "This time next year, we'll be millionaires!"
+  "This time next year, we'll be millionaires!",
+  // Bar & sales
+  "That's a classy drink, that is.",
+  "Only the best for Del Boy.",
+  "Make mine a large one.",
+  "It's a guaranteed earner.",
+  "A nice little earner.",
+  "I know a bloke.",
+  "Leave it to Uncle Del.",
+  "Trust me on this one.",
+  "You know it makes sense.",
+  "Play it nice and cool.",
+  "Stick with me, Rodney.",
+  "What a wally.",
+  "Use your loaf.",
+  "Do me a favour.",
+  "Très sophisticated.",
+  "Très continental."
 ];
 
 const delDescriptions = [

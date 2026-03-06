@@ -116,17 +116,27 @@ function showResult(finalRotation) {
   document.getElementById('result-meta').innerHTML =
     fmtEpisodes(d) + (d.ordered_by ? `<span class="badge">${d.ordered_by}</span>` : '');
   document.getElementById('result-notes').textContent = d.notes;
-  const frenchQuotes = [
+  const wheelQuotes = [
+    // Bar
+    'What you having?', 'Make mine a large one.', 'Have one for luck.',
+    'Another round then.', 'Drink up, we\'re leaving.', 'That\'s a classy drink.',
+    'Only the best for Del Boy.', 'Treat yourself, Rodney.', 'That\'s the spirit.', 'Go on then.',
+    // Catchphrase
+    'Lovely jubbly!', 'Cushty!', 'He who dares wins.', 'Play it nice and cool.',
+    'You know it makes sense.', 'Stick with me, Rodney.', 'Trust me on this one.',
+    // Continental
+    'Bonjour!', 'Très chic.', 'Très magnifique.', 'Très continental.', 'Ooh la la.',
+    'Très sophisticated.', 'Chateau something-or-other.',
+    // French nonsense
     'Mange tout, Rodney, mange tout!', 'Bonnet de douche!', 'Creme de la menthe!',
     'Fromage frais!', 'Joie de vivre!', 'Pot pourri!', 'Voila!', 'Pas de Calais!',
     'Plume de ma tante!', 'Mais oui!', 'Tres bien ensemble!', 'Fabrique belgique!',
     'Bain marie!', 'Chateauneuf du Pape!', 'Boeuf a la mode!', 'Allemagne dix points!',
-    'Je suis, je reste!', 'Lovely jubbly!', 'He who dares, wins!', 'Cushty!',
-    'Münchengladbach!', 'Bonetti bonetti!', 'Di stefano!', 'Puscas puscas!',
-    'Si danke schon, bonjour!', 'Menage a trois!', 'Au contraire!', 'Mon dieu!',
-    'Oeuf sur la plat!', 'Argent comptant!'
+    'Je suis, je reste!', 'Münchengladbach!', 'Bonetti bonetti!', 'Di stefano!',
+    'Puscas puscas!', 'Si danke schon, bonjour!', 'Menage a trois!', 'Au contraire!',
+    'Mon dieu!', 'Oeuf sur la plat!', 'Argent comptant!'
   ];
-  document.getElementById('result-quote').textContent = '🍸 ' + frenchQuotes[Math.floor(Math.random() * frenchQuotes.length)];
+  document.getElementById('result-quote').textContent = '🍸 ' + wheelQuotes[Math.floor(Math.random() * wheelQuotes.length)];
   document.getElementById('result').classList.remove('hidden');
 }
 
