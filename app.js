@@ -1,29 +1,31 @@
-let drinks = [];
+let allDrinks = [], wheelDrinks = [], confirmed = [], candidates = [];
 
 fetch('drinks.json')
   .then(r => r.json())
   .then(data => {
-    drinks = data;
-    const confirmed = drinks.filter(d => d.status === 'confirmed');
+    confirmed = data.confirmed;
+    candidates = data.candidates || [];
+    allDrinks = [...confirmed, ...candidates];
+    wheelDrinks = confirmed.filter(d => d.show_on_wheel);
+
     const countEl = document.getElementById('drink-count');
-    if (countEl) countEl.textContent = `${confirmed.length} confirmed · ${drinks.length} total`;
+    if (countEl) countEl.textContent = `${confirmed.length} confirmed · ${candidates.length} unconfirmed`;
     if (document.getElementById('wheel')) initWheel();
     if (document.getElementById('drinks-grid')) renderDrinks();
   });
 
-/* ── Wheel (confirmed only) ── */
+/* ── Wheel (confirmed + show_on_wheel only) ── */
 const COLORS = [
   '#b3f4f3', '#e192ef', '#b1f2a7', '#f0c27b', '#e965a5',
   '#7ec8e3', '#c4b5fd', '#fca5a5', '#86efac', '#fde68a',
   '#a78bfa', '#67e8f9', '#f9a8d4', '#bef264', '#fdba74'
 ];
 
-let rotation = 0, spinning = false, canvas, ctx, wheelDrinks = [];
+let rotation = 0, spinning = false, canvas, ctx;
 
 function initWheel() {
   canvas = document.getElementById('wheel');
   ctx = canvas.getContext('2d');
-  wheelDrinks = drinks.filter(d => d.status === 'confirmed');
   drawWheel(0);
   document.getElementById('spin-btn').addEventListener('click', spin);
 }
@@ -54,13 +56,11 @@ function drawWheel(rot) {
     ctx.textAlign = 'right';
     ctx.fillStyle = '#14111b';
     ctx.font = '600 8px "JetBrains Mono"';
-    const name = wheelDrinks[i].cocktail.length > 24
-      ? wheelDrinks[i].cocktail.slice(0, 22) + '…'
-      : wheelDrinks[i].cocktail;
+    const name = wheelDrinks[i].drink.length > 24
+      ? wheelDrinks[i].drink.slice(0, 22) + '…' : wheelDrinks[i].drink;
     ctx.fillText(name, r - 12, 3);
     ctx.restore();
   }
-
   ctx.restore();
 
   ctx.beginPath();
@@ -85,39 +85,31 @@ function spin() {
 
   const extra = 5 + Math.random() * 5;
   const target = extra * 2 * Math.PI + Math.random() * 2 * Math.PI;
-  const duration = 4000;
-  const start = performance.now();
+  const duration = 4000, start = performance.now();
 
   function animate(now) {
     const t = Math.min((now - start) / duration, 1);
-    const current = target * (1 - Math.pow(1 - t, 3));
-    rotation = current;
-    drawWheel(current);
-    if (t < 1) {
-      requestAnimationFrame(animate);
-    } else {
-      spinning = false;
-      document.getElementById('spin-btn').disabled = false;
-      showResult(current);
-    }
+    rotation = target * (1 - Math.pow(1 - t, 3));
+    drawWheel(rotation);
+    if (t < 1) requestAnimationFrame(animate);
+    else { spinning = false; document.getElementById('spin-btn').disabled = false; showResult(rotation); }
   }
   requestAnimationFrame(animate);
+}
+
+function fmtEpisodes(d) {
+  if (!d.episodes) return '';
+  return d.episodes.map(e => `<span class="badge season">${e.ref}</span><span class="badge">${e.title}</span>`).join(' ');
 }
 
 function showResult(finalRotation) {
   const n = wheelDrinks.length, arc = (2 * Math.PI) / n;
   const norm = ((Math.PI * 1.5) - (finalRotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
-  const idx = Math.floor(norm / arc) % n;
-  const d = wheelDrinks[idx];
+  const d = wheelDrinks[Math.floor(norm / arc) % n];
 
-  const ep = d.season === 'special' ? d.episode_title :
-    typeof d.season === 'number' ? `s${d.season}e${d.episode}` : '';
-
-  document.getElementById('result-drink').textContent = d.cocktail;
+  document.getElementById('result-drink').textContent = d.drink;
   document.getElementById('result-meta').innerHTML =
-    (ep ? `<span class="badge season">${ep}</span>` : '') +
-    (d.episode_title && d.season !== 'special' ? `<span class="badge">${d.episode_title}</span>` : '') +
-    (d.ordered_by ? `<span class="badge">${d.ordered_by}</span>` : '');
+    fmtEpisodes(d) + (d.ordered_by ? `<span class="badge">${d.ordered_by}</span>` : '');
   document.getElementById('result-notes').textContent = d.notes;
   document.getElementById('result-quote').textContent = '🍸 lovely jubbly!';
   document.getElementById('result').classList.remove('hidden');
@@ -128,35 +120,26 @@ function renderDrinks(filter = 'all') {
   const grid = document.getElementById('drinks-grid');
   if (!grid) return;
 
-  const filtered = drinks.filter(d => {
-    if (filter === 'confirmed') return d.status === 'confirmed';
-    if (filter === 'community') return d.status === 'community_candidate';
-    return true;
-  });
+  const list = filter === 'confirmed' ? confirmed :
+    filter === 'community' ? candidates : allDrinks;
 
-  grid.innerHTML = filtered.map((d, i) => {
-    const ep = d.season === 'special' ? d.episode_title :
-      typeof d.season === 'number' ? `s${d.season}e${d.episode}` : '';
-    const isCommunity = d.status === 'community_candidate';
-
+  grid.innerHTML = list.map((d, i) => {
+    const isCand = d.status === 'community_candidate';
     return `
-      <div class="drink-card ${isCommunity ? 'community' : ''}" style="animation-delay: ${i * 0.04}s">
-        <div class="drink-name">${d.cocktail}</div>
+      <div class="drink-card ${isCand ? 'community' : ''}" style="animation-delay: ${i * 0.04}s">
+        <div class="drink-name">${d.drink}</div>
         <div class="drink-meta">
-          ${isCommunity ? '<span class="badge unconfirmed">unconfirmed</span>' : ''}
-          ${ep ? `<span class="badge season">${ep}</span>` : ''}
-          ${d.episode_title && d.season !== 'special' ? `<span class="badge">${d.episode_title}</span>` : ''}
+          ${isCand ? '<span class="badge unconfirmed">unconfirmed</span>' : ''}
+          ${fmtEpisodes(d)}
           ${d.ordered_by && d.ordered_by !== 'Unconfirmed' ? `<span class="badge">${d.ordered_by}</span>` : ''}
         </div>
         <div class="drink-notes">${d.notes}</div>
       </div>`;
   }).join('');
 
-  const confirmed = filtered.filter(d => d.status === 'confirmed').length;
-  const community = filtered.filter(d => d.status === 'community_candidate').length;
   document.getElementById('drink-count').textContent =
-    filter === 'all' ? `${confirmed} confirmed · ${community} unconfirmed` :
-    `${filtered.length} drinks`;
+    filter === 'all' ? `${confirmed.length} confirmed · ${candidates.length} unconfirmed` :
+    `${list.length} drinks`;
 }
 
 document.querySelectorAll('.filter-btn').forEach(btn => {
