@@ -95,14 +95,6 @@ const delPronunciations = [
 ];
 
 const delQuotes = [
-  "Lovely jubbly!",
-  "Mange tout, Rodney, mange tout!",
-  "He who dares, wins!",
-  "Cushty!",
-  "Bonnet de douche!",
-  "Bonjour!",
-  "You plonker, Rodney!",
-  "This time next year, we'll be millionaires!",
   // Del's French
   "Creme de la menthe!",
   "Fromage frais!",
@@ -124,12 +116,21 @@ const delQuotes = [
   "Allemagne dix points!",
   "Je suis, je reste!",
   "Argent comptant!",
-  // Del's multilingual greetings
+  "Bonnet de douche!",
+  "Mange tout, Rodney, mange tout!",
+  // Del's multilingual
   "Si danke schon, bonjour!",
   "Münchengladbach!",
   "Bonetti bonetti!",
   "Di stefano!",
-  "Puscas puscas!"
+  "Puscas puscas!",
+  // Catchphrases
+  "Lovely jubbly!",
+  "He who dares, wins!",
+  "Cushty!",
+  "Bonjour!",
+  "You plonker, Rodney!",
+  "This time next year, we'll be millionaires!"
 ];
 
 const delDescriptions = [
@@ -142,7 +143,17 @@ const delDescriptions = [
   "You won't get this in your local Wetherspoons. Pas de Calais!",
   "The barman at the Hilton taught me this one. Mais oui!",
   "Very sophistimacated. Oeuf sur la plat!",
-  "This is what they serve at Henley. Bonnet de douche!"
+  "This is what they serve at Henley. Bonnet de douche!",
+  "As drunk by all the top Euro businessmen. Allemagne dix points!",
+  "It's what they have at Ascot. Chateauneuf du Pape!",
+  "Del Boy's special. He who dares, drinks! Fromage frais!",
+  "Straight from the cocktail bars of Peckham. Pot pourri!",
+  "You can't get this in Margate. Plume de ma tante!",
+  "A drink for the true connoisseur. Je suis, je reste!",
+  "They were knocking these back at Cannes. Boeuf a la mode!",
+  "Trigger had three of these and fell off his stool. Menage a trois!",
+  "Boycie reckons it's common but what does he know? Au contraire!",
+  "Mike had to order in special glasses for this one. Voila!"
 ];
 
 function pick(arr) {
@@ -249,12 +260,12 @@ function generateDrink() {
     const noun = pick(cocktailNouns);
     const garnish = pick(garnishes);
     name = `${place} ${noun}`;
-    description = `It's an exotic cocktail, ain't it? Served with ${garnish}. ${pick(delQuotes)}`;
+    description = `It's an exotic cocktail, ain't it? Served with ${garnish}. ${pick(delDescriptions).split('.').pop().trim()}`;
   } else if (pattern < 0.85) {
     const posh = pick(delPronunciations);
     const garnish = pick(garnishes);
     name = posh.del;
-    description = `That's "${posh.word}" to you and me. Served with ${garnish}. Very sophistimacated.`;
+    description = `That's "${posh.word}" to you and me. Served with ${garnish}. ${pick(delDescriptions).split('.').pop().trim()}`;
   } else {
     // Pattern 6: Del's Dodgy Products
     const p = generateProduct();
