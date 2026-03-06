@@ -99,7 +99,12 @@ function spin() {
 
 function fmtEpisodes(d) {
   if (!d.episodes) return '';
-  return d.episodes.map(e => `<span class="badge season">${e.ref}</span><span class="badge">${e.title}</span>`).join(' ');
+  const seen = new Set();
+  return d.episodes.map(e => {
+    if (seen.has(e.title)) return '';
+    seen.add(e.title);
+    return `<span class="badge season">${e.title}</span>`;
+  }).join('');
 }
 
 function showResult(finalRotation) {
