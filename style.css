@@ -119,7 +119,7 @@ body::before {
   text-align: center; padding: 28px; border-radius: 16px;
   background: rgba(26, 22, 33, 0.95); border: 1px solid var(--accent);
   box-shadow: 0 0 60px rgba(179, 244, 243, 0.2);
-  backdrop-filter: blur(8px); animation: rise 0.4s ease;
+  backdrop-filter: blur(8px); animation: fadeIn 0.3s ease;
 }
 
 .result.hidden { display: none; }
@@ -177,6 +177,8 @@ body::before {
 .drink-card:hover { border-color: var(--accent); transform: translateY(-2px); }
 
 @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
 .drink-name {
   font-size: 16px; font-weight: 600; color: var(--accent);
