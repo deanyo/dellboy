@@ -53,7 +53,9 @@ const bizarreAdditions = [
   'Alka-Seltzer', 'a Berocca', 'a Rennie',
   'a splash of Gaviscon', 'two Disprin',
   'a Lemsip', 'a vitamin C tablet',
-  'a spoonful of Andrews', 'a Dioralyte sachet'
+  'a spoonful of Andrews', 'a Dioralyte sachet',
+  'a Resolve', 'a fizzy Redoxon', 'a crushed Rennies',
+  'a Yakult', 'a spoonful of Calpol', 'a Strepsil'
 ];
 
 const garnishes = [
@@ -153,7 +155,17 @@ const delDescriptions = [
   "They were knocking these back at Cannes. Boeuf a la mode!",
   "Trigger had three of these and fell off his stool. Menage a trois!",
   "Boycie reckons it's common but what does he know? Au contraire!",
-  "Mike had to order in special glasses for this one. Voila!"
+  "Mike had to order in special glasses for this one. Voila!",
+  "Goes lovely with a bit of pate foie gras. Conseil d'etat!",
+  "Apres moi la deluge, as they say in Grenobles!",
+  "I learnt this one from a bloke in Benidorm. Catalogue raisonne!",
+  "The diamonds are good, as they say in France. Chasse de forme!",
+  "Revenons a nos moutons, as the guv'nor of Bastille used to say!",
+  "Servir frais mois non glace - could've been on the top floor!",
+  "Tel Aviv, as the French say - you can never tell!",
+  "Tete de veau - everyone's a winner!",
+  "Raisse de chassie, as they say in Dieppe!",
+  "Rein a dire, rein a faire, as they say in Lourdes!"
 ];
 
 function pick(arr) {
@@ -209,7 +221,11 @@ const productSpiels = [
   "As recommended by Harley Street doctors. Probably.",
   "Available exclusively through Trotters Independent Traders.",
   "Hand-bottled at our Peckham facility. The bathroom.",
-  "Endorsed by European royalty. Well, a bloke Del met in Benidorm."
+  "Endorsed by European royalty. Well, a bloke Del met in Benidorm.",
+  "Featured in the Financial Times. Well, it was wrapped in it.",
+  "As drunk by Jean-Claude van Damme. Probably.",
+  "Organic, free-range, and completely above board. Honest.",
+  "From a recipe passed down through generations of Trotters."
 ];
 
 const productRealities = [
@@ -220,7 +236,11 @@ const productRealities = [
   "Trigger's been using it to water his plants.",
   "Boycie wouldn't touch it with a bargepole.",
   "Mike banned it from the Nag's Head after the first batch.",
-  "Rodney found the bottling plant. It's the kitchen sink."
+  "Rodney found the bottling plant. It's the kitchen sink.",
+  "Denzil's been storing it in his lorry for six months.",
+  "The label fell off in the rain. Twice.",
+  "Albert drank some and was in bed for a week.",
+  "Marlene used it to strip paint off the garage door."
 ];
 
 function generateProduct() {
