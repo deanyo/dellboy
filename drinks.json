@@ -662,6 +662,20 @@
       ],
       "notes": "Rodney's order after Del's elaborate Caribbean Stallion. The waiter mocks him: 'Half a lager... Reg Varney drank one of them in Holiday on the Buses!' - comparing Rodney to a naff 70s sitcom character.",
       "show_on_wheel": true
+    },
+    {
+      "id": "mackeson",
+      "drink": "Mackeson",
+      "status": "confirmed",
+      "ordered_by": "Grandad (for Del)",
+      "episodes": [
+        {
+          "ref": "S01E05",
+          "title": "A Slow Bus to Chingford"
+        }
+      ],
+      "notes": "Grandad's substitute: 'they'd sold right out of Pina Coladas Del, so I got you a Mackeson instead.' A dark milk stout instead of a cocktail. Del accepts it without complaint.",
+      "show_on_wheel": true
     }
   ],
   "candidates": [
