@@ -19,7 +19,8 @@
         }
       ],
       "notes": "The full recipe: tequila, coconut rum, Crème de Menthe, a smidgin of Campari, Angostura bitters, topped with grapefruit juice. Cost £7.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "del_invention"
     },
     {
       "id": "tia-maria-and-lucozade",
@@ -39,7 +40,8 @@
         }
       ],
       "notes": "One of the signature Del drink gags. Appears in both the 1985 special and the 2003 finale.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "del_invention"
     },
     {
       "id": "tequila-sunset",
@@ -53,7 +55,8 @@
         }
       ],
       "notes": "Del's homemade cocktail - actually made with gin because he ran out of tequila.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "del_invention"
     },
     {
       "id": "pina-colada",
@@ -93,7 +96,8 @@
         }
       ],
       "notes": "Del's most frequently ordered drink across the entire series.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "pina-colada-alka-seltzer",
@@ -107,7 +111,8 @@
         }
       ],
       "notes": "After a heavy night: 'Juan. Can I have a pina colada with ice and Alka Seltzer?'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "del_invention"
     },
     {
       "id": "baileys-and-cherryade",
@@ -121,7 +126,9 @@
         }
       ],
       "notes": "Del orders at the Nag's Head. Script says Manhattan but the broadcast has Baileys and Cherryade - David Jason ad-libbed the drink order.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "del_invention",
+      "script_variant": "Manhattan"
     },
     {
       "id": "malibu-and-cherryade",
@@ -135,7 +142,8 @@
         }
       ],
       "notes": "'a Malibu and cherryade for moi, and one for yourself.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "campari-and-diet-coke",
@@ -149,7 +157,8 @@
         }
       ],
       "notes": "Del's usual: 'Yeah, Campari and diet coke please!'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "singapore-sling",
@@ -174,7 +183,8 @@
         }
       ],
       "notes": "One of Del's recurring sophisticated orders.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "manhattan",
@@ -194,7 +204,8 @@
         }
       ],
       "notes": "Ordered in two separate episodes.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "beaujolais-nouveau",
@@ -208,7 +219,8 @@
         }
       ],
       "notes": "Del orders 'a bottle of Beaujolais Nouveau... a '79' - not realising Nouveau means this year's vintage.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "wine"
     },
     {
       "id": "spritzer",
@@ -222,7 +234,8 @@
         }
       ],
       "notes": "Del's yuppie phase: 'I never liked Spitzers before, but now I'm right into 'em.' Scene of the famous bar flap fall.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "wine"
     },
     {
       "id": "bacardi-and-russian",
@@ -236,7 +249,8 @@
         }
       ],
       "notes": "Barmaid lists Del's recent drinks: 'Tuesday it was a Bacardi and Russian.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "grand-marnier-and-orange",
@@ -250,7 +264,8 @@
         }
       ],
       "notes": "'last week it was Grand Marnier and Orange.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "dubonnet-and-coke",
@@ -264,7 +279,8 @@
         }
       ],
       "notes": "'the week before that was Dubonnet and Coke.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "half-a-lager",
@@ -278,7 +294,8 @@
         }
       ],
       "notes": "Rodney's order after Del's elaborate Caribbean Stallion. The waiter mocks him: 'Half a lager... Reg Varney drank one of them in Holiday on the Buses!' - comparing Rodney to a naff 70s sitcom character.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "beer"
     },
     {
       "id": "brandy-and-andrews",
@@ -292,7 +309,8 @@
         }
       ],
       "notes": "'Del now stirs a spoonful of Andrews into his brandy.' Peak Del - medicating and drinking at the same time.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "remedy"
     },
     {
       "id": "rum-and-black",
@@ -312,7 +330,8 @@
         }
       ],
       "notes": "Albert's drink - famously mispronounced.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "cuba-libre",
@@ -332,7 +351,8 @@
         }
       ],
       "notes": "Del pronounces it 'Cubre Libre'.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "armagnac",
@@ -346,7 +366,8 @@
         }
       ],
       "notes": "Pam offers Armagnac. Del: 'Yeah, that'll do if you're out of brandy.' - not realising Armagnac IS brandy.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "digestif"
     },
     {
       "id": "vin-ordinaire",
@@ -360,7 +381,8 @@
         }
       ],
       "notes": "Del brags: 'I said get down that cellar and sort me out a bottle of Vin Ordinaire!' - thinking it means something posh.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "wine"
     },
     {
       "id": "irish-coffee",
@@ -374,7 +396,8 @@
         }
       ],
       "notes": "'Del had a mutton Madras and four Irish coffees.' Four of them. Classic Del.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "peach-daiquiri",
@@ -388,7 +411,8 @@
         }
       ],
       "notes": "'Give us a peach daiquiri and a chipolata sandwich.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "banana-daiquiri",
@@ -402,7 +426,8 @@
         }
       ],
       "notes": "'giss a banana daiquiri for us moi and Australian lager for Jumbo.' Mike: 'I only sell British lager, Del.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "blackcurrant-and-pernod",
@@ -416,7 +441,8 @@
         }
       ],
       "notes": "Ordered at the Nag's Head.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "remy-martin-and-cream-soda",
@@ -430,7 +456,8 @@
         }
       ],
       "notes": "'Oi John. Giss a Remi Martin with cream soda and lots of ice, and 'arf of lager.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "chivas-regal-and-coke",
@@ -445,7 +472,8 @@
         }
       ],
       "notes": "Del orders defiantly: 'a large chivas Regal with coke!' Rodney orders Southern Comfort but Del overrides: 'That's 'alf a lager for Rodney.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "tia-maria-and-pineapple-juice",
@@ -459,7 +487,8 @@
         }
       ],
       "notes": "'Giss a Tia Maria and a pineapple juice and, er, 'alf a lager for lover boy.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "rum-and-pep",
@@ -473,7 +502,8 @@
         }
       ],
       "notes": "Grandad recalls his mum: 'with her rum and pep in one hand, 20 Senior Service in the other.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "drambuie-lime-soda",
@@ -487,7 +517,8 @@
         }
       ],
       "notes": "Elaborate garnish-heavy order. Barmaid gives him two halves of lager instead.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "del_invention"
     },
     {
       "id": "dubonnet",
@@ -501,7 +532,8 @@
         }
       ],
       "notes": "Del tries to impress in Spain: 'Garçon, dos Dubonnet pore favore. Danke schon.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "brandy-and-cream-soda",
@@ -515,7 +547,8 @@
         }
       ],
       "notes": "Wallace serves Del brandy but they've run out of cream soda.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "port-and-lemon",
@@ -535,7 +568,8 @@
         }
       ],
       "notes": "Offered by Del as a mixer option and ordered by Aunt Reen.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "grand-marnier-and-grapefruit",
@@ -549,7 +583,8 @@
         }
       ],
       "notes": "'Yeah, Grand Marnier and grapefruit.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "malibu-and-tonic-with-lime",
@@ -563,7 +598,8 @@
         }
       ],
       "notes": "'I'll have a Malibu and tonic with some lime and 'alf of lager, please darling.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "courvoisier",
@@ -577,7 +613,8 @@
         }
       ],
       "notes": "Del warns Albert: 'You'll feel even worse if I catch you at my Courvoisier again.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "digestif"
     },
     {
       "id": "benedictine-and-lemonade",
@@ -591,7 +628,8 @@
         }
       ],
       "notes": "June's drink of choice - she totters in with a glass of it.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "bacardi-and-coke",
@@ -605,7 +643,8 @@
         }
       ],
       "notes": "'Can I have a large Bacardi and coke, please?'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "spirit_and_soft_drink"
     },
     {
       "id": "malibu-reef",
@@ -619,7 +658,8 @@
         }
       ],
       "notes": "Danny spots Del's abandoned drink: 'A Castella, a Malibu reef. Are you sure he's not around?'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "large-snowball",
@@ -633,7 +673,8 @@
         }
       ],
       "notes": "'How about a large snowball? Mike, a large snowball for Dora, please.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "romanian-riesling",
@@ -647,7 +688,8 @@
         }
       ],
       "notes": "Del's dodgy wine sold to the Nag's Head. Mike serves the remainder of the 'Romanian Rheisling.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "wine"
     },
     {
       "id": "tequila-slammer",
@@ -661,7 +703,8 @@
         }
       ],
       "notes": "Mike lists the round: 'a G&T for Raquel, a Tequila Slammer for Rodney, orange juice for Cassandra.'",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "classic_cocktail"
     },
     {
       "id": "mackeson",
@@ -675,7 +718,8 @@
         }
       ],
       "notes": "Grandad's substitute: 'they'd sold right out of Pina Coladas Del, so I got you a Mackeson instead.' A dark milk stout instead of a cocktail. Del accepts it without complaint.",
-      "show_on_wheel": true
+      "show_on_wheel": true,
+      "type": "beer"
     }
   ],
   "candidates": [
