@@ -96,22 +96,60 @@ const delPronunciations = [
 
 const delQuotes = [
   "Lovely jubbly!",
-  "This time next year, we'll be millionaires!",
   "Mange tout, Rodney, mange tout!",
   "He who dares, wins!",
   "Cushty!",
   "Bonnet de douche!",
-  "Play it cool, son, play it cool.",
-  "You know it makes sense!",
-  "No income tax, no VAT...",
   "Bonjour!",
-  "It's all gone a bit Pete Tong.",
-  "You plonker, Rodney!"
+  "You plonker, Rodney!",
+  "This time next year, we'll be millionaires!",
+  // Del's French
+  "Creme de la menthe!",
+  "Fromage frais!",
+  "Joie de vivre!",
+  "Pot pourri!",
+  "Voila!",
+  "Pas de Calais!",
+  "Plume de ma tante!",
+  "Menage a trois!",
+  "Mais oui!",
+  "Mon dieu!",
+  "Au contraire!",
+  "Tres bien ensemble!",
+  "Fabrique belgique!",
+  "Bain marie!",
+  "Oeuf sur la plat!",
+  "Chateauneuf du Pape!",
+  "Boeuf a la mode!",
+  "Allemagne dix points!",
+  "Je suis, je reste!",
+  "Argent comptant!",
+  // Del's multilingual greetings
+  "Si danke schon, bonjour!",
+  "Münchengladbach!",
+  "Bonetti bonetti!",
+  "Di stefano!",
+  "Puscas puscas!"
+];
+
+const delDescriptions = [
+  "Very popular in the West End. Creme de la menthe!",
+  "It's continental, innit? Tres bien ensemble!",
+  "They drink this in all the top wine bars. Fabrique belgique!",
+  "I had one of these in Monte Carlo once. Argent comptant!",
+  "Rodney, this is what the jet set drink. Joie de vivre!",
+  "Trust me, I know what I'm doing. Bain marie!",
+  "You won't get this in your local Wetherspoons. Pas de Calais!",
+  "The barman at the Hilton taught me this one. Mais oui!",
+  "Very sophistimacated. Oeuf sur la plat!",
+  "This is what they serve at Henley. Bonnet de douche!"
 ];
 
 function pick(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
+
+function pickDesc() { return pick(delDescriptions); }
 
 function generateDrink() {
   const pattern = Math.random();
@@ -119,33 +157,28 @@ function generateDrink() {
   let name, description, quote;
 
   if (pattern < 0.35) {
-    // Pattern 1: Spirit + Wrong Soft Drink
     const spirit = pick(spirits);
     const mixer = pick(wrongMixers);
     name = `${spirit} and ${mixer}`;
-    description = `A ${spirit.toLowerCase()}, topped up with ${mixer.toLowerCase()}. Del swears by it.`;
+    description = pickDesc();
   } else if (pattern < 0.55) {
-    // Pattern 2: Spirit + Wrong Juice
     const spirit = pick(spirits);
     const juice = pick(wrongJuices);
     name = `${spirit} and ${juice}`;
-    description = `${spirit} with a generous splash of ${juice.toLowerCase()}. Continental, innit?`;
+    description = pickDesc();
   } else if (pattern < 0.7) {
-    // Pattern 3: Spirit + Soft Drink + Bizarre Addition
     const spirit = pick(spirits);
     const mixer = pick([...wrongMixers, ...wrongJuices]);
     const bizarre = pick(bizarreAdditions);
     name = `${spirit} and ${mixer} with ${bizarre}`;
-    description = `A ${spirit.toLowerCase()} and ${mixer.toLowerCase()}, finished with ${bizarre.toLowerCase()} for that extra fizz.`;
+    description = pickDesc();
   } else if (pattern < 0.85) {
-    // Pattern 4: Made-up Cocktail Name
     const place = pick(realCocktails);
     const noun = pick(cocktailNouns);
     const garnish = pick(garnishes);
     name = `${place} ${noun}`;
-    description = `It's an exotic cocktail, ain't it? Served with ${garnish}. Very popular in the West End.`;
+    description = `It's an exotic cocktail, ain't it? Served with ${garnish}. ${pick(delQuotes)}`;
   } else {
-    // Pattern 5: Mispronounced Posh Drink
     const posh = pick(delPronunciations);
     const garnish = pick(garnishes);
     name = posh.del;
