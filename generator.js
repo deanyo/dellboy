@@ -39,7 +39,8 @@ const wrongMixers = [
   'Tango', 'Fanta', 'Limeade', 'Soda Stream Cola',
   'Barley Water', 'Horlicks', 'Ovaltine', 'Bovril',
   'Ginger Beer', 'Cream of Soda', 'Bitter Lemon',
-  'American Cream Soda', 'Bubblegum Soda', 'Slush Puppie'
+  'American Cream Soda', 'Bubblegum Soda', 'Slush Puppie',
+  'Blackcurrant Cordial', 'Ribena', 'Tango'
 ];
 
 const wrongJuices = [
@@ -76,7 +77,9 @@ const cocktailNouns = [
   'Stallion', 'Sunset', 'Sunrise', 'Thunder', 'Lightning',
   'Breeze', 'Dream', 'Explosion', 'Meltdown', 'Inferno',
   'Paradise', 'Tornado', 'Tsunami', 'Volcano', 'Hurricane',
-  'Blizzard', 'Avalanche', 'Monsoon', 'Eclipse', 'Odyssey'
+  'Blizzard', 'Avalanche', 'Monsoon', 'Eclipse', 'Odyssey',
+  'Wallbanger', 'Slammer', 'Snowball', 'Sling', 'Fizz',
+  'Colada', 'Daiquiri', 'Libre', 'Reef', 'Diesel'
 ];
 
 const delPronunciations = [
@@ -211,6 +214,16 @@ const delProducts = [
     name: "Romanian Riesling",
     spiel: "A cheeky little number from the Carpathian foothills. Very popular with the cognoscenti.",
     reality: "Dodgy plonk Del flogged to the Nag's Head. Mike's still serving the dregs."
+  },
+  {
+    name: "Beaujolais Nouveau '79",
+    spiel: "A vintage year. Pressed from the finest grapes in France.",
+    reality: "Nouveau means this year's vintage. There is no '79. The girls laughed."
+  },
+  {
+    name: "Del's Tequila Sunset",
+    spiel: "An exotic cocktail of my own creation. Very popular in the West End.",
+    reality: "Made with gin because he ran out of tequila. Miranda noticed."
   }
 ];
 
