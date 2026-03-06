@@ -634,6 +634,20 @@
       ],
       "notes": "Del orders at the Nag's Head. Script says Manhattan but the broadcast has Baileys and Cherryade - David Jason ad-libbed the drink order.",
       "show_on_wheel": true
+    },
+    {
+      "id": "irish-coffee",
+      "drink": "Irish Coffee",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "Strangers on the Shore"
+        }
+      ],
+      "notes": "'Del had a mutton Madras and four Irish coffees.' Four of them. Classic Del.",
+      "show_on_wheel": true
     }
   ],
   "candidates": [
@@ -642,13 +656,6 @@
       "drink": "Harvey Wallbanger",
       "status": "community_candidate",
       "notes": "Strongly associated with Del's yuppie phase but NOT in any script. In Yuppy Love he actually orders Beaujolais Nouveau and Spritzers.",
-      "show_on_wheel": false
-    },
-    {
-      "id": "irish-coffee",
-      "drink": "Irish Coffee",
-      "status": "community_candidate",
-      "notes": "Often mentioned in fan lists. Google AI claims S02E05 but not found in scripts.",
       "show_on_wheel": false
     },
     {
