@@ -1,68 +1,168 @@
-const drinks = [
-  {"cocktail":"Caribbean Stallion","season":1,"episode":6,"episode_title":"Go West Young Man","notes":"Tequila, coconut rum, creme de menthe, Campari, bitters, grapefruit juice, umbrella"},
-  {"cocktail":"Blackcurrant and Pernod","season":1,"episode":4,"episode_title":"The Second Time Around","notes":"Ordered in the Nag's Head"},
-  {"cocktail":"Dubonnet","season":2,"episode":6,"episode_title":"It Never Rains","notes":"Del orders while trying to impress a French girl"},
-  {"cocktail":"Tequila Sunset","season":3,"episode":4,"episode_title":"Yesterday Never Comes","notes":"Turns out to contain gin because Del ran out of tequila"},
-  {"cocktail":"Campari and Diet Coke","season":3,"episode":7,"episode_title":"Who's a Pretty Boy?","notes":"Del calls it his usual"},
-  {"cocktail":"Singapore Sling","season":4,"episode":1,"episode_title":"Happy Returns","notes":"Ordered at the Nag's Head"},
-  {"cocktail":"Tia Maria and Lucozade","season":4,"episode":8,"episode_title":"To Hull and Back","notes":"Rodney orders for Del"},
-  {"cocktail":"Bacardi and Russian","season":4,"episode":8,"episode_title":"To Hull and Back","notes":"Mentioned as one of Del's previous drinks"},
-  {"cocktail":"Grand Marnier and Orange","season":4,"episode":8,"episode_title":"To Hull and Back","notes":"Mentioned by the barmaid"},
-  {"cocktail":"Dubonnet and Coke","season":4,"episode":8,"episode_title":"To Hull and Back","notes":"Another of Del's experiments"},
-  {"cocktail":"Malibu and Cherryade","season":"special","episode":"Dates","episode_title":"Dates","notes":"Ordered during the Nag's Head scene"},
-  {"cocktail":"Singapore Sling","season":"special","episode":"Dates","episode_title":"Dates","notes":"Another order in the same episode"},
-  {"cocktail":"Pina Colada with Ice and Alka-Seltzer","season":6,"episode":4,"episode_title":"The Unlucky Winner Is…","notes":"Del adds Alka-Seltzer for fizz"},
-  {"cocktail":"Peach Daiquiri","season":7,"episode":1,"episode_title":"The Sky's The Limit","notes":"Ordered with a chipolata sandwich"},
-  {"cocktail":"Manhattan","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Classic cocktail Del orders while acting sophisticated"},
-  {"cocktail":"Harvey Wallbanger","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Another attempt at sounding classy"},
-  {"cocktail":"Irish Coffee","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Often referenced in bar scenes"},
-  {"cocktail":"Brandy and Pineapple","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Typical Del Boy combination"},
-  {"cocktail":"Brandy and Cream Soda","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Another soft-drink mixer"},
-  {"cocktail":"Grand Marnier and Grapefruit Juice","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Strong citrus mix"},
-  {"cocktail":"Drambuie with Lime and Soda","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Del's elaborate order with garnish"},
-  {"cocktail":"Armagnac","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Used when brandy unavailable"},
-  {"cocktail":"Pernod and Blackcurrant","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Another variation of his Pernod drinks"}
+let drinks = [];
+
+fetch('drinks.json')
+  .then(r => r.json())
+  .then(data => {
+    drinks = data;
+    const confirmed = drinks.filter(d => d.status === 'confirmed');
+    const countEl = document.getElementById('drink-count');
+    if (countEl) countEl.textContent = `${confirmed.length} confirmed · ${drinks.length} total`;
+    if (document.getElementById('wheel')) initWheel();
+    if (document.getElementById('drinks-grid')) renderDrinks();
+  });
+
+/* ── Wheel (confirmed only) ── */
+const COLORS = [
+  '#b3f4f3', '#e192ef', '#b1f2a7', '#f0c27b', '#e965a5',
+  '#7ec8e3', '#c4b5fd', '#fca5a5', '#86efac', '#fde68a',
+  '#a78bfa', '#67e8f9', '#f9a8d4', '#bef264', '#fdba74'
 ];
 
-let currentFilter = 'all';
+let rotation = 0, spinning = false, canvas, ctx, wheelDrinks = [];
 
+function initWheel() {
+  canvas = document.getElementById('wheel');
+  ctx = canvas.getContext('2d');
+  wheelDrinks = drinks.filter(d => d.status === 'confirmed');
+  drawWheel(0);
+  document.getElementById('spin-btn').addEventListener('click', spin);
+}
+
+function drawWheel(rot) {
+  const cx = canvas.width / 2, cy = canvas.height / 2, r = cx - 10;
+  const n = wheelDrinks.length, arc = (2 * Math.PI) / n;
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.save();
+  ctx.translate(cx, cy);
+  ctx.rotate(rot);
+
+  for (let i = 0; i < n; i++) {
+    const a = i * arc;
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.arc(0, 0, r, a, a + arc);
+    ctx.closePath();
+    ctx.fillStyle = COLORS[i % COLORS.length];
+    ctx.fill();
+    ctx.strokeStyle = '#14111b';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    ctx.save();
+    ctx.rotate(a + arc / 2);
+    ctx.textAlign = 'right';
+    ctx.fillStyle = '#14111b';
+    ctx.font = '600 8px "JetBrains Mono"';
+    const name = wheelDrinks[i].cocktail.length > 24
+      ? wheelDrinks[i].cocktail.slice(0, 22) + '…'
+      : wheelDrinks[i].cocktail;
+    ctx.fillText(name, r - 12, 3);
+    ctx.restore();
+  }
+
+  ctx.restore();
+
+  ctx.beginPath();
+  ctx.arc(cx, cy, 28, 0, 2 * Math.PI);
+  ctx.fillStyle = '#1a1621';
+  ctx.fill();
+  ctx.strokeStyle = '#b3f4f3';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.fillStyle = '#b3f4f3';
+  ctx.font = '600 16px "Space Grotesk"';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('🍸', cx, cy);
+}
+
+function spin() {
+  if (spinning) return;
+  spinning = true;
+  document.getElementById('spin-btn').disabled = true;
+  document.getElementById('result').classList.add('hidden');
+
+  const extra = 5 + Math.random() * 5;
+  const target = extra * 2 * Math.PI + Math.random() * 2 * Math.PI;
+  const duration = 4000;
+  const start = performance.now();
+
+  function animate(now) {
+    const t = Math.min((now - start) / duration, 1);
+    const current = target * (1 - Math.pow(1 - t, 3));
+    rotation = current;
+    drawWheel(current);
+    if (t < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      spinning = false;
+      document.getElementById('spin-btn').disabled = false;
+      showResult(current);
+    }
+  }
+  requestAnimationFrame(animate);
+}
+
+function showResult(finalRotation) {
+  const n = wheelDrinks.length, arc = (2 * Math.PI) / n;
+  const norm = ((Math.PI * 1.5) - (finalRotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+  const idx = Math.floor(norm / arc) % n;
+  const d = wheelDrinks[idx];
+
+  const ep = d.season === 'special' ? d.episode_title :
+    typeof d.season === 'number' ? `s${d.season}e${d.episode}` : '';
+
+  document.getElementById('result-drink').textContent = d.cocktail;
+  document.getElementById('result-meta').innerHTML =
+    (ep ? `<span class="badge season">${ep}</span>` : '') +
+    (d.episode_title && d.season !== 'special' ? `<span class="badge">${d.episode_title}</span>` : '') +
+    (d.ordered_by ? `<span class="badge">${d.ordered_by}</span>` : '');
+  document.getElementById('result-notes').textContent = d.notes;
+  document.getElementById('result-quote').textContent = '🍸 lovely jubbly!';
+  document.getElementById('result').classList.remove('hidden');
+}
+
+/* ── List ── */
 function renderDrinks(filter = 'all') {
   const grid = document.getElementById('drinks-grid');
+  if (!grid) return;
+
   const filtered = drinks.filter(d => {
-    if (filter === 'all') return true;
-    if (filter === 'known') return d.season !== 'unknown';
-    if (filter === 'unknown') return d.season === 'unknown';
+    if (filter === 'confirmed') return d.status === 'confirmed';
+    if (filter === 'community') return d.status === 'community_candidate';
     return true;
   });
 
-  grid.innerHTML = filtered.map((drink, i) => {
-    const isUnknown = drink.season === 'unknown';
-    const seasonText = isUnknown ? 'unknown' : 
-      drink.season === 'special' ? 'special' : `s${drink.season}e${drink.episode}`;
-    
+  grid.innerHTML = filtered.map((d, i) => {
+    const ep = d.season === 'special' ? d.episode_title :
+      typeof d.season === 'number' ? `s${d.season}e${d.episode}` : '';
+    const isCommunity = d.status === 'community_candidate';
+
     return `
-      <div class="drink-card" style="animation-delay: ${i * 0.05}s">
-        <div class="drink-name">${drink.cocktail}</div>
+      <div class="drink-card ${isCommunity ? 'community' : ''}" style="animation-delay: ${i * 0.04}s">
+        <div class="drink-name">${d.cocktail}</div>
         <div class="drink-meta">
-          <span class="badge ${isUnknown ? 'unknown' : 'season'}">${seasonText}</span>
-          ${!isUnknown && drink.episode_title !== 'unknown' ? 
-            `<span class="badge">${drink.episode_title}</span>` : ''}
+          ${isCommunity ? '<span class="badge unconfirmed">unconfirmed</span>' : ''}
+          ${ep ? `<span class="badge season">${ep}</span>` : ''}
+          ${d.episode_title && d.season !== 'special' ? `<span class="badge">${d.episode_title}</span>` : ''}
+          ${d.ordered_by && d.ordered_by !== 'Unconfirmed' ? `<span class="badge">${d.ordered_by}</span>` : ''}
         </div>
-        <div class="drink-notes">${drink.notes}</div>
-      </div>
-    `;
+        <div class="drink-notes">${d.notes}</div>
+      </div>`;
   }).join('');
 
-  document.getElementById('drink-count').textContent = `${filtered.length} drinks`;
+  const confirmed = filtered.filter(d => d.status === 'confirmed').length;
+  const community = filtered.filter(d => d.status === 'community_candidate').length;
+  document.getElementById('drink-count').textContent =
+    filter === 'all' ? `${confirmed} confirmed · ${community} unconfirmed` :
+    `${filtered.length} drinks`;
 }
 
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    currentFilter = btn.dataset.filter;
-    renderDrinks(currentFilter);
+    renderDrinks(btn.dataset.filter);
   });
 });
-
-renderDrinks();

@@ -1,25 +1,401 @@
 [
-  {"cocktail":"Caribbean Stallion","season":1,"episode":6,"episode_title":"Go West Young Man","notes":"Tequila, coconut rum, creme de menthe, Campari, bitters, grapefruit juice, umbrella"},
-  {"cocktail":"Blackcurrant and Pernod","season":1,"episode":4,"episode_title":"The Second Time Around","notes":"Ordered in the Nag's Head"},
-  {"cocktail":"Dubonnet","season":2,"episode":6,"episode_title":"It Never Rains","notes":"Del orders while trying to impress a French girl"},
-  {"cocktail":"Tequila Sunset","season":3,"episode":4,"episode_title":"Yesterday Never Comes","notes":"Turns out to contain gin because Del ran out of tequila"},
-  {"cocktail":"Campari and Diet Coke","season":3,"episode":7,"episode_title":"Who's a Pretty Boy?","notes":"Del calls it his usual"},
-  {"cocktail":"Singapore Sling","season":4,"episode":1,"episode_title":"Happy Returns","notes":"Ordered at the Nag's Head"},
-  {"cocktail":"Tia Maria and Lucozade","season":4,"episode":8,"episode_title":"To Hull and Back","notes":"Rodney orders for Del"},
-  {"cocktail":"Bacardi and Russian","season":4,"episode":8,"episode_title":"To Hull and Back","notes":"Mentioned as one of Del's previous drinks"},
-  {"cocktail":"Grand Marnier and Orange","season":4,"episode":8,"episode_title":"To Hull and Back","notes":"Mentioned by the barmaid"},
-  {"cocktail":"Dubonnet and Coke","season":4,"episode":8,"episode_title":"To Hull and Back","notes":"Another of Del's experiments"},
-  {"cocktail":"Malibu and Cherryade","season":"special","episode":"Dates","episode_title":"Dates","notes":"Ordered during the Nag's Head scene"},
-  {"cocktail":"Singapore Sling","season":"special","episode":"Dates","episode_title":"Dates","notes":"Another order in the same episode"},
-  {"cocktail":"Pina Colada with Ice and Alka-Seltzer","season":6,"episode":4,"episode_title":"The Unlucky Winner Is…","notes":"Del adds Alka-Seltzer for fizz"},
-  {"cocktail":"Peach Daiquiri","season":7,"episode":1,"episode_title":"The Sky's The Limit","notes":"Ordered with a chipolata sandwich"},
-  {"cocktail":"Manhattan","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Classic cocktail Del orders while acting sophisticated"},
-  {"cocktail":"Harvey Wallbanger","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Another attempt at sounding classy"},
-  {"cocktail":"Irish Coffee","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Often referenced in bar scenes"},
-  {"cocktail":"Brandy and Pineapple","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Typical Del Boy combination"},
-  {"cocktail":"Brandy and Cream Soda","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Another soft-drink mixer"},
-  {"cocktail":"Grand Marnier and Grapefruit Juice","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Strong citrus mix"},
-  {"cocktail":"Drambuie with Lime and Soda","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Del's elaborate order with garnish"},
-  {"cocktail":"Armagnac","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Used when brandy unavailable"},
-  {"cocktail":"Pernod and Blackcurrant","season":"unknown","episode":"unknown","episode_title":"unknown","notes":"Another variation of his Pernod drinks"}
+  {
+    "cocktail": "Caribbean Stallion",
+    "season": 1, "episode": 2, "episode_title": "Go West Young Man",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "The full ridiculous recipe: tequila, coconut rum, Crème de Menthe, a smidgin of Campari, Angostura bitters, topped with grapefruit juice. Cost £7."
+  },
+  {
+    "cocktail": "Blackcurrant and Pernod",
+    "season": 1, "episode": 4, "episode_title": "The Second Time Around",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Ordered at the Nag's Head."
+  },
+  {
+    "cocktail": "Rémy Martin with Cream Soda",
+    "season": 1, "episode": 7, "episode_title": "Christmas Crackers",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders: 'Oi John. Giss a Remi Martin with cream soda and lots of ice, and 'arf of lager.'"
+  },
+  {
+    "cocktail": "Vin Ordinaire",
+    "season": 1, "episode": 7, "episode_title": "Christmas Crackers",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del brags: 'I said get down that cellar and sort me out a bottle of Vin Ordinaire!' - thinking it means something posh."
+  },
+  {
+    "cocktail": "Chivas Regal and Coke",
+    "season": 2, "episode": 0, "episode_title": "A Slow Bus to Chingford",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders defiantly: 'a large chivas Regal with coke!' Rodney then orders a double Southern Comfort with American dry - but Del overrides: 'That's 'alf a lager for Rodney.'"
+  },
+  {
+    "cocktail": "Tia Maria and Pineapple Juice",
+    "season": 2, "episode": 1, "episode_title": "The Long Legs of the Law",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders: 'Giss a Tia Maria and a pineapple juice and, er, 'alf a lager for lover boy.'"
+  },
+  {
+    "cocktail": "Rum and Pep",
+    "season": 2, "episode": 2, "episode_title": "Ashes to Ashes",
+    "ordered_by": "Mentioned (Grandad's mum)",
+    "status": "confirmed",
+    "notes": "Grandad recalls his mum: 'with her rum and pep in one hand, 20 Senior Service in the other. She looked like a lady.'"
+  },
+  {
+    "cocktail": "Drambuie with Lime, Soda, Ice, Lemon and Cherry",
+    "season": 2, "episode": 6, "episode_title": "It Never Rains",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del's elaborate order: 'a large Drambuie with lime, topped up with soda, lots of ice, slice of lemon and a cherry.' Barmaid gives him two halves of lager."
+  },
+  {
+    "cocktail": "Dubonnet",
+    "season": 2, "episode": 6, "episode_title": "It Never Rains",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del tries to impress in Spain: 'Garçon, dos Dubonnet pore favore. Danke schon.'"
+  },
+  {
+    "cocktail": "Pina Colada",
+    "season": 3, "episode": 1, "episode_title": "Homesick",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del casually offers: 'Tea, coffee, Pina Colada?' - more comic offer than bar order."
+  },
+  {
+    "cocktail": "Port and Lemon",
+    "season": 3, "episode": 4, "episode_title": "Yesterday Never Comes",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del offers Miranda: 'port and lemon, rum and coke? Or shall I surprise you?'"
+  },
+  {
+    "cocktail": "Tequila Sunset",
+    "season": 3, "episode": 4, "episode_title": "Yesterday Never Comes",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del's homemade cocktail - actually made with gin because he ran out of tequila. 'That is called a Tequila Sunset. Cheers.'"
+  },
+  {
+    "cocktail": "Campari and Diet Coke",
+    "season": 3, "episode": 7, "episode_title": "Who's a Pretty Boy?",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del's usual: 'Yeah, Campari and diet coke please!'"
+  },
+  {
+    "cocktail": "Singapore Sling",
+    "season": 4, "episode": 1, "episode_title": "Happy Returns",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders: 'a Singapore Sling and half of Strongbow.'"
+  },
+  {
+    "cocktail": "Grand Marnier and Grapefruit",
+    "season": 4, "episode": 3, "episode_title": "Hole in One",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders at the Nag's Head: 'Yeah, Grand Marnier and grapefruit.'"
+  },
+  {
+    "cocktail": "Malibu and Tonic with Lime",
+    "season": 4, "episode": 5, "episode_title": "Sleeping Dogs Lie",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders: 'I'll have a Malibu and tonic with some lime and 'alf of lager, please darling.'"
+  },
+  {
+    "cocktail": "Bacardi and Russian",
+    "season": "special", "episode": "To Hull and Back", "episode_title": "To Hull and Back",
+    "ordered_by": "Referenced by barmaid",
+    "status": "confirmed",
+    "notes": "Barmaid lists Del's recent drinks: 'Tuesday it was a Bacardi and Russian.'"
+  },
+  {
+    "cocktail": "Grand Marnier and Orange",
+    "season": "special", "episode": "To Hull and Back", "episode_title": "To Hull and Back",
+    "ordered_by": "Referenced by barmaid",
+    "status": "confirmed",
+    "notes": "Barmaid: 'last week it was Grand Marnier and Orange.'"
+  },
+  {
+    "cocktail": "Dubonnet and Coke",
+    "season": "special", "episode": "To Hull and Back", "episode_title": "To Hull and Back",
+    "ordered_by": "Referenced by barmaid",
+    "status": "confirmed",
+    "notes": "Barmaid: 'the week before that was Dubonnet and Coke.'"
+  },
+  {
+    "cocktail": "Tia Maria and Lucozade",
+    "season": "special", "episode": "To Hull and Back", "episode_title": "To Hull and Back",
+    "ordered_by": "Del (via Rodney)",
+    "status": "confirmed",
+    "notes": "One of the signature drinks. 'Del sips his Tia Maria and Lucozade. He doesn't know what it is, but he likes it.'"
+  },
+  {
+    "cocktail": "Pina Colada",
+    "season": "special", "episode": "A Royal Flush", "episode_title": "A Royal Flush",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Grandad tried to get Del one but they'd sold out - got him a Mackeson instead."
+  },
+  {
+    "cocktail": "Courvoisier",
+    "season": 5, "episode": 5, "episode_title": "Video Nasty",
+    "ordered_by": "Albert (Del's stash)",
+    "status": "confirmed",
+    "notes": "Del warns Albert: 'You'll feel even worse if I catch you at my Courvoisier again.'"
+  },
+  {
+    "cocktail": "Manhattan",
+    "season": 5, "episode": 7, "episode_title": "Who Wants to Be a Millionaire?",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders: 'giss a Manhattan Mike, small rum for him. Spit in the rum.'"
+  },
+  {
+    "cocktail": "Banana Daiquiri",
+    "season": 5, "episode": 7, "episode_title": "Who Wants to Be a Millionaire?",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders: 'giss a banana daiquiri for us moi and Australian lager for Jumbo.' Mike: 'I only sell British lager, Del.'"
+  },
+  {
+    "cocktail": "Benedictine and Lemonade",
+    "season": "special", "episode": "A Royal Flush", "episode_title": "A Royal Flush",
+    "ordered_by": "June",
+    "status": "confirmed",
+    "notes": "June's drink of choice - she totters in with a glass of it. 'I'm on Benedictine and lemonade.'"
+  },
+  {
+    "cocktail": "Rum and Black",
+    "season": "special", "episode": "A Royal Flush", "episode_title": "A Royal Flush",
+    "ordered_by": "Albert",
+    "status": "confirmed",
+    "notes": "Albert's nightcap - he accidentally orders 'a bum and rack!'"
+  },
+  {
+    "cocktail": "Bucks Fizz",
+    "season": "special", "episode": "A Royal Flush", "episode_title": "A Royal Flush",
+    "ordered_by": "Mentioned (joke)",
+    "status": "confirmed",
+    "notes": "Del jokes: 'It's lucky he didn't fancy a Bucks Fizz, innit?'"
+  },
+  {
+    "cocktail": "Sangria",
+    "season": "special", "episode": "A Royal Flush", "episode_title": "A Royal Flush",
+    "ordered_by": "Del (off-screen chaos)",
+    "status": "confirmed",
+    "notes": "The maid says she'll 'never drink Sangria again' after Del's visit."
+  },
+  {
+    "cocktail": "Port and Lemon",
+    "season": "special", "episode": "The Frog's Legacy", "episode_title": "The Frog's Legacy",
+    "ordered_by": "Aunt Reen",
+    "status": "confirmed",
+    "notes": "Reen orders: 'I'll have a port and lemon. Better make it a small one.'"
+  },
+  {
+    "cocktail": "Malibu and Cherryade",
+    "season": "special", "episode": "Dates", "episode_title": "Dates",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders: 'a Malibu and cherryade for moi, and one for yourself.'"
+  },
+  {
+    "cocktail": "Singapore Sling",
+    "season": "special", "episode": "Dates", "episode_title": "Dates",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders: 'a Singapore sling for me and a small rum for Elton John over there.'"
+  },
+  {
+    "cocktail": "Pina Colada",
+    "season": "special", "episode": "The Jolly Boys' Outing", "episode_title": "The Jolly Boys' Outing",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del mentions having 'a couple of pina coladas' before talking about religion."
+  },
+  {
+    "cocktail": "Pina Colada",
+    "season": 6, "episode": 2, "episode_title": "Danger UXD",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders: 'pina colada for me, please, Michael; same again for Denzil.'"
+  },
+  {
+    "cocktail": "Pina Colada with Ice and Alka-Seltzer",
+    "season": "special", "episode": "Miami Twice", "episode_title": "Miami Twice",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "After a heavy night: 'Juan. Can I have a pina colada with ice and Alka Seltzer?'"
+  },
+  {
+    "cocktail": "Bacardi and Coke",
+    "season": "special", "episode": "Miami Twice", "episode_title": "Miami Twice",
+    "ordered_by": "Rodney",
+    "status": "confirmed",
+    "notes": "Rodney orders: 'Can I have a large Bacardi and coke, please?'"
+  },
+  {
+    "cocktail": "Pina Colada",
+    "season": 6, "episode": 5, "episode_title": "Sickness and Wealth",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders: 'A pina colada for me Nerys, and the usual for everyone else.'"
+  },
+  {
+    "cocktail": "Malibu Reef",
+    "season": 6, "episode": 6, "episode_title": "Little Problems",
+    "ordered_by": "Del (spotted by Danny)",
+    "status": "confirmed",
+    "notes": "Danny spots Del's abandoned drink: 'A Castella, a Malibu reef. Are you sure he's not around?'"
+  },
+  {
+    "cocktail": "Armagnac",
+    "season": "special", "episode": "Mother Nature's Son", "episode_title": "Mother Nature's Son",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Pam offers Armagnac. Del: 'Yeah, that'll do if you're out of brandy.' - not realising Armagnac IS brandy."
+  },
+  {
+    "cocktail": "Peach Daiquiri",
+    "season": 7, "episode": 1, "episode_title": "The Sky's the Limit",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders: 'Give us a peach daiquiri and a chipolata sandwich.'"
+  },
+  {
+    "cocktail": "Large Cognac",
+    "season": 7, "episode": 2, "episode_title": "The Chance of a Lunchtime",
+    "ordered_by": "Boycie / Del",
+    "status": "confirmed",
+    "notes": "Boycie: 'I'll have a large cognac.' Del: 'A cognac, an orange juice and my usual.'"
+  },
+  {
+    "cocktail": "Large Snowball",
+    "season": 7, "episode": 5, "episode_title": "He Ain't Heavy, He's My Uncle",
+    "ordered_by": "Del (for Dora)",
+    "status": "confirmed",
+    "notes": "Del orders: 'How about a large snowball? Mike, a large snowball for Dora, please.'"
+  },
+  {
+    "cocktail": "Manhattan",
+    "season": "special", "episode": "Heroes and Villains", "episode_title": "Heroes and Villains",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders: 'for Rodney and a Manhattan for moi.'"
+  },
+  {
+    "cocktail": "Singapore Sling",
+    "season": "special", "episode": "If They Could See Us Now", "episode_title": "If They Could See Us Now",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del's big celebration round: 'a Singapore Sling for me, a cognac for Boycie, vodka and lime for Marlene, a Cubre Libre for Denzil...'"
+  },
+  {
+    "cocktail": "Cuba Libre",
+    "season": "special", "episode": "If They Could See Us Now", "episode_title": "If They Could See Us Now",
+    "ordered_by": "Del (for Denzil)",
+    "status": "confirmed",
+    "notes": "Part of Del's big round. Del says 'Cubre Libre' - his mangled pronunciation."
+  },
+  {
+    "cocktail": "Rum and Black",
+    "season": "special", "episode": "If They Could See Us Now", "episode_title": "If They Could See Us Now",
+    "ordered_by": "Del (for Albert)",
+    "status": "confirmed",
+    "notes": "Del orders: 'A rum and Black for Bobby Crush' - meaning Albert."
+  },
+  {
+    "cocktail": "Cuba Libre",
+    "season": 7, "episode": 3, "episode_title": "Stage Fright",
+    "ordered_by": "Mentioned",
+    "status": "confirmed",
+    "notes": "Del on someone blowing their money: 'Blown it all on Cuba libres and lairy suits.'"
+  },
+  {
+    "cocktail": "Tia Maria and Lucozade",
+    "season": "special", "episode": "Sleepless in Peckham", "episode_title": "Sleepless in Peckham",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del pours himself one at the cocktail bar while Raquel sets the table. Still his go-to after all these years."
+  },
+  {
+    "cocktail": "Romanian Riesling",
+    "season": "special", "episode": "Time on Our Hands", "episode_title": "Time on Our Hands",
+    "ordered_by": "Del (sold to pub)",
+    "status": "confirmed",
+    "notes": "Del's dodgy wine sold to the Nag's Head. Mike serves the remainder of the 'Romanian Rheisling.'"
+  },
+  {
+    "cocktail": "Harvey Wallbanger",
+    "season": null, "episode": null, "episode_title": null,
+    "ordered_by": "Unconfirmed",
+    "status": "community_candidate",
+    "notes": "Mentioned in fan compilations but not found in any script."
+  },
+  {
+    "cocktail": "Irish Coffee",
+    "season": null, "episode": null, "episode_title": null,
+    "ordered_by": "Unconfirmed",
+    "status": "community_candidate",
+    "notes": "Often mentioned in fan lists but not found in scripts."
+  },
+  {
+    "cocktail": "Brandy and Pineapple",
+    "season": null, "episode": null, "episode_title": null,
+    "ordered_by": "Unconfirmed",
+    "status": "community_candidate",
+    "notes": "Commonly repeated by fans but not pinned to an episode."
+  },
+  {
+    "cocktail": "Baileys and Cherryade",
+    "season": null, "episode": null, "episode_title": null,
+    "ordered_by": "Unconfirmed",
+    "status": "community_candidate",
+    "notes": "Fan-list item. Searched scripts - no mention of Baileys found."
+  },
+  {
+    "cocktail": "Pernod and Blackcurrant",
+    "season": null, "episode": null, "episode_title": null,
+    "ordered_by": "Unconfirmed",
+    "status": "community_candidate",
+    "notes": "Likely a reversed-memory duplicate of Blackcurrant and Pernod."
+  },
+  {
+    "cocktail": "Red Wine Spritzer",
+    "season": null, "episode": null, "episode_title": null,
+    "ordered_by": "Unconfirmed",
+    "status": "community_candidate",
+    "notes": "Fan-memory candidate. Del actually says 'Spitzer' (his mangled version) in Yuppy Love S6E1, but it's white wine and mineral water, not red."
+  },
+  {
+    "cocktail": "Spritzer (\"Spitzer\")",
+    "season": 6, "episode": 1, "episode_title": "Yuppy Love",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del's yuppie phase drink: 'I never liked Spitzers before, but now I'm right into 'em.' Also offers one to Trigger. Scene of the famous bar flap fall."
+  },
+  {
+    "cocktail": "Beaujolais Nouveau",
+    "season": 6, "episode": 1, "episode_title": "Yuppy Love",
+    "ordered_by": "Del",
+    "status": "confirmed",
+    "notes": "Del orders 'a bottle of Beaujolais Nouveau... a '79' - not realising Nouveau means this year's vintage. The girls laugh."
+  },
+  {
+    "cocktail": "Creme de Menthe and Tizer",
+    "season": null, "episode": null, "episode_title": null,
+    "ordered_by": "Unconfirmed",
+    "status": "community_candidate",
+    "notes": "Very funny but speculative. Tizer appears in scripts but only as a comparison, not as a drink order."
+  }
 ]
