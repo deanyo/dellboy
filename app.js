@@ -138,15 +138,32 @@ function showResult(finalRotation) {
   ];
   document.getElementById('result-quote').textContent = '🍸 ' + wheelQuotes[Math.floor(Math.random() * wheelQuotes.length)];
   document.getElementById('result').classList.remove('hidden');
+  document.getElementById('result').style.cursor = 'pointer';
+  document.getElementById('result').onclick = () => {
+    window.location.href = 'list.html?q=' + encodeURIComponent(d.drink);
+  };
 }
 
 /* ── List ── */
-function renderDrinks(filter = 'all') {
+let currentFilter = 'all', currentSearch = '';
+
+function renderDrinks(filter, search) {
   const grid = document.getElementById('drinks-grid');
   if (!grid) return;
+  if (filter) currentFilter = filter;
+  if (search !== undefined) currentSearch = search.toLowerCase();
 
-  const list = filter === 'confirmed' ? confirmed :
-    filter === 'community' ? candidates : allDrinks;
+  let list = currentFilter === 'confirmed' ? confirmed :
+    currentFilter === 'community' ? candidates : allDrinks;
+
+  if (currentSearch) {
+    list = list.filter(d =>
+      d.drink.toLowerCase().includes(currentSearch) ||
+      d.notes.toLowerCase().includes(currentSearch) ||
+      (d.ordered_by || '').toLowerCase().includes(currentSearch) ||
+      (d.episodes || []).some(e => e.title.toLowerCase().includes(currentSearch))
+    );
+  }
 
   grid.innerHTML = list.map((d, i) => {
     const isCand = d.status === 'community_candidate';
@@ -163,8 +180,7 @@ function renderDrinks(filter = 'all') {
   }).join('');
 
   document.getElementById('drink-count').textContent =
-    filter === 'all' ? `${confirmed.length} confirmed · ${candidates.length} unconfirmed` :
-    `${list.length} drinks`;
+    `${list.length} drink${list.length !== 1 ? 's' : ''}`;
 }
 
 document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -174,3 +190,13 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     renderDrinks(btn.dataset.filter);
   });
 });
+
+const searchInput = document.getElementById('search');
+if (searchInput) {
+  searchInput.addEventListener('input', e => renderDrinks(null, e.target.value));
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('q')) {
+    searchInput.value = params.get('q');
+    currentSearch = params.get('q').toLowerCase();
+  }
+}
