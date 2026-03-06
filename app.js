@@ -140,7 +140,7 @@ function showResult(finalRotation) {
   document.getElementById('result').classList.remove('hidden');
   document.getElementById('result').style.cursor = 'pointer';
   document.getElementById('result').onclick = () => {
-    window.location.href = 'list.html?q=' + encodeURIComponent(d.drink);
+    window.location.href = 'index.html?q=' + encodeURIComponent(d.drink);
   };
 }
 
