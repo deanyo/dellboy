@@ -151,38 +151,117 @@ function pick(arr) {
 
 function pickDesc() { return pick(delDescriptions); }
 
+const delProducts = [
+  {
+    name: "Peckham Spring Water",
+    spiel: "From a natural and ancient source.",
+    reality: "It's from the Thames. You can't get more ancient and natural than that!"
+  },
+  {
+    name: "Trotter's Pre-Blessed Wine",
+    spiel: "The church'll be rejoicing, the flock'll be redeemed. Rein a dire, rein a faire as they say in Lourdes.",
+    reality: "Romanian wine, blessed by the lorry load. Happens to be white wine for communion."
+  },
+  {
+    name: "Vintage Beaujolais White Wine",
+    spiel: "Pressed from the finest grapes in France. 5 year old Beaujolais Nouveau as drunk by Jean-Claude van Damme.",
+    reality: "Beaujolais Nouveau is RED and should be consumed within 6 months. This is white."
+  },
+  {
+    name: "Romanian Riesling",
+    spiel: "A cheeky little number from the Carpathian foothills. Very popular with the cognoscenti.",
+    reality: "Dodgy plonk Del flogged to the Nag's Head. Mike's still serving the dregs."
+  }
+];
+
+const delProductTemplates = [
+  { prefix: "Trotter's Independent", suffix: "Traders" },
+  { prefix: "Peckham", suffix: "" },
+  { prefix: "Trotter's", suffix: "" },
+  { prefix: "Del Boy's", suffix: "" },
+  { prefix: "TITCO", suffix: "" },
+  { prefix: "Nelson Mandela House", suffix: "" }
+];
+
+const fakeDrinkProducts = [
+  "Sparkling Mineral Water", "Premium Tonic Water", "Artisan Lemonade",
+  "Craft Ginger Beer", "Organic Elderflower Pressé", "Vintage Cream Soda",
+  "Alpine Spring Water", "Mediterranean Lemon Squash", "Estate Bottled Cordial",
+  "Single Origin Cola", "Hand-Pressed Apple Juice", "Botanical Fizz"
+];
+
+const productSpiels = [
+  "Sourced from the finest springs in South East London.",
+  "As served at all the top restaurants in Mayfair.",
+  "Imported direct from the continent. Well, Calais.",
+  "Winner of the Peckham Business Award three years running.",
+  "As recommended by Harley Street doctors. Probably.",
+  "Available exclusively through Trotters Independent Traders.",
+  "Hand-bottled at our Peckham facility. The bathroom.",
+  "Endorsed by European royalty. Well, a bloke Del met in Benidorm."
+];
+
+const productRealities = [
+  "It's tap water with a fancy label.",
+  "Fell off the back of a lorry in Bermondsey.",
+  "Best before date was last Christmas.",
+  "The trading standards are already asking questions.",
+  "Trigger's been using it to water his plants.",
+  "Boycie wouldn't touch it with a bargepole.",
+  "Mike banned it from the Nag's Head after the first batch.",
+  "Rodney found the bottling plant. It's the kitchen sink."
+];
+
+function generateProduct() {
+  if (Math.random() < 0.4) {
+    const p = pick(delProducts);
+    return { name: p.name, description: `"${p.spiel}"`, reality: p.reality };
+  }
+  const tmpl = pick(delProductTemplates);
+  const product = pick(fakeDrinkProducts);
+  const name = tmpl.suffix ? `${tmpl.prefix} ${product} ${tmpl.suffix}` : `${tmpl.prefix} ${product}`;
+  return { name, description: `"${pick(productSpiels)}"`, reality: pick(productRealities) };
+}
+
 function generateDrink() {
   const pattern = Math.random();
 
   let name, description, quote;
 
-  if (pattern < 0.35) {
+  if (pattern < 0.30) {
     const spirit = pick(spirits);
     const mixer = pick(wrongMixers);
     name = `${spirit} and ${mixer}`;
     description = pickDesc();
-  } else if (pattern < 0.55) {
+  } else if (pattern < 0.45) {
     const spirit = pick(spirits);
     const juice = pick(wrongJuices);
     name = `${spirit} and ${juice}`;
     description = pickDesc();
-  } else if (pattern < 0.7) {
+  } else if (pattern < 0.58) {
     const spirit = pick(spirits);
     const mixer = pick([...wrongMixers, ...wrongJuices]);
     const bizarre = pick(bizarreAdditions);
     name = `${spirit} and ${mixer} with ${bizarre}`;
     description = pickDesc();
-  } else if (pattern < 0.85) {
+  } else if (pattern < 0.72) {
     const place = pick(realCocktails);
     const noun = pick(cocktailNouns);
     const garnish = pick(garnishes);
     name = `${place} ${noun}`;
     description = `It's an exotic cocktail, ain't it? Served with ${garnish}. ${pick(delQuotes)}`;
-  } else {
+  } else if (pattern < 0.85) {
     const posh = pick(delPronunciations);
     const garnish = pick(garnishes);
     name = posh.del;
     description = `That's "${posh.word}" to you and me. Served with ${garnish}. Very sophistimacated.`;
+  } else {
+    // Pattern 6: Del's Dodgy Products
+    const p = generateProduct();
+    name = p.name;
+    description = p.description;
+    quote = p.reality;
+    return { name, description, quote: `The real deal: ${quote}` };
   }
 
   quote = pick(delQuotes);
