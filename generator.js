@@ -80,20 +80,20 @@ const cocktailNouns = [
 ];
 
 const delPronunciations = [
-  { word: 'Crème Brûlée', del: 'Crem Broolay' },
   { word: 'Châteauneuf-du-Pape', del: 'Chateau Neuf de Pap' },
-  { word: 'Pouilly-Fuissé', del: 'Pooley Foosey' },
-  { word: 'Gewürztraminer', del: 'Gerwurtz Traminer' },
-  { word: 'Armagnac', del: 'Armag-nack' },
-  { word: 'Beaujolais', del: 'Bojolay' },
-  { word: 'Moët & Chandon', del: 'Mo-ette and Chandon' },
-  { word: 'Veuve Clicquot', del: 'Voove Clicko' },
-  { word: 'Cointreau', del: 'Coin-trow' },
-  { word: 'Daiquiri', del: 'Dackery' },
-  { word: 'Caipirinha', del: 'Kai-peer-in-ya' },
-  { word: 'Sauvignon Blanc', del: 'Sauvig-non Blank' },
-  { word: 'Pinot Grigio', del: 'Pee-no Gridge-ee-oh' },
-  { word: 'Prosecco', del: 'Pro-secko' }
+  { word: 'Crème de la Crème', del: 'Creme de la Menthe' },
+  { word: 'Hors d\'oeuvres', del: 'Hors doovers' },
+  { word: 'Entrepreneur', del: 'Entrer-manure' },
+  { word: 'Au fait', del: 'Oh fate' },
+  { word: 'Coup de grâce', del: 'Coupe de grass' },
+  { word: 'Pièce de résistance', del: 'Piece de resistance' },
+  { word: 'Carte blanche', del: 'Cot blanch' },
+  { word: 'Déjà vu', del: 'Deja voo' },
+  { word: 'Fiancée', del: 'Fee-on-say' },
+  { word: 'Ménage à trois', del: 'Menage a twah' },
+  { word: 'Bon appétit', del: 'Bone appeteet' },
+  { word: 'Raison d\'être', del: 'Raisin detra' },
+  { word: 'Fait accompli', del: 'Fate accomplee' }
 ];
 
 const delQuotes = [
@@ -302,7 +302,7 @@ function generateDrink() {
     const posh = pick(delPronunciations);
     const garnish = pick(garnishes);
     name = posh.del;
-    description = `That's "${posh.word}" to you and me. Served with ${garnish}. ${pick(delDescriptions).split('.').pop().trim()}`;
+    description = `Del meant "${posh.word}". Served with ${garnish}. ${pick(delDescriptions).split('.').pop().trim()}`;
   } else {
     // Pattern 6: Del's Dodgy Products
     const p = generateProduct();
