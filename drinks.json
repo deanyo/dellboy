@@ -42,7 +42,7 @@
       "ordered_by": "Del",
       "episodes": [
         {
-          "ref": "S01E07",
+          "ref": "SPECIAL",
           "title": "Christmas Crackers"
         }
       ],
@@ -56,7 +56,7 @@
       "ordered_by": "Del",
       "episodes": [
         {
-          "ref": "S01E07",
+          "ref": "SPECIAL",
           "title": "Christmas Crackers"
         }
       ],
@@ -85,8 +85,8 @@
       "ordered_by": "Del",
       "episodes": [
         {
-          "ref": "S02E01",
-          "title": "The Long Legs of the Law"
+          "ref": "S02E04",
+          "title": "No Greater Love"
         }
       ],
       "notes": "'Giss a Tia Maria and a pineapple juice and, er, 'alf a lager for lover boy.'",
@@ -99,8 +99,8 @@
       "ordered_by": "Mentioned (Grandad's mum)",
       "episodes": [
         {
-          "ref": "S02E02",
-          "title": "Ashes to Ashes"
+          "ref": "S02E05",
+          "title": "The Yellow Peril"
         }
       ],
       "notes": "Grandad recalls his mum: 'with her rum and pep in one hand, 20 Senior Service in the other.'",
@@ -268,7 +268,7 @@
       "ordered_by": "Del",
       "episodes": [
         {
-          "ref": "S03E08",
+          "ref": "SPECIAL",
           "title": "Thicker than Water"
         }
       ],
