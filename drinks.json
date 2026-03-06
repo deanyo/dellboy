@@ -648,6 +648,20 @@
       ],
       "notes": "'Del had a mutton Madras and four Irish coffees.' Four of them. Classic Del.",
       "show_on_wheel": true
+    },
+    {
+      "id": "half-a-lager",
+      "drink": "Half a Lager",
+      "status": "confirmed",
+      "ordered_by": "Rodney",
+      "episodes": [
+        {
+          "ref": "S01E02",
+          "title": "Go West Young Man"
+        }
+      ],
+      "notes": "Rodney's order after Del's elaborate Caribbean Stallion. The waiter mocks him: 'Half a lager... Reg Varney drank one of them in Holiday on the Buses!' - comparing Rodney to a naff 70s sitcom character.",
+      "show_on_wheel": true
     }
   ],
   "candidates": [
