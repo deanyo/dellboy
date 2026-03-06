@@ -254,7 +254,7 @@
         },
         {
           "ref": "SPECIAL",
-          "title": "If They Could See Us Now",
+          "title": "Modern Men",
           "note": "Part of Del's big celebration round"
         }
       ],
@@ -344,7 +344,7 @@
         },
         {
           "ref": "SPECIAL",
-          "title": "Sleepless in Peckham",
+          "title": "Time on Our Hands",
           "note": "Del pours himself one at the cocktail bar. Still his go-to."
         }
       ],
@@ -426,7 +426,7 @@
         },
         {
           "ref": "SPECIAL",
-          "title": "If They Could See Us Now",
+          "title": "Modern Men",
           "note": "Del orders 'A rum and Black for Bobby Crush' (Albert)"
         }
       ],
@@ -572,7 +572,7 @@
         },
         {
           "ref": "SPECIAL",
-          "title": "If They Could See Us Now",
+          "title": "Modern Men",
           "note": "Del says 'Cubre Libre' - his mangled pronunciation"
         }
       ],
@@ -591,6 +591,20 @@
         }
       ],
       "notes": "Del's dodgy wine sold to the Nag's Head. Mike serves the remainder of the 'Romanian Rheisling.'",
+      "show_on_wheel": true
+    },
+    {
+      "id": "tequila-slammer",
+      "drink": "Tequila Slammer",
+      "status": "confirmed",
+      "ordered_by": "Rodney (via Mike)",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "Modern Men"
+        }
+      ],
+      "notes": "Mike lists the round: 'a G&T for Raquel, a Tequila Slammer for Rodney, orange juice for Cassandra.'",
       "show_on_wheel": true
     }
   ],
