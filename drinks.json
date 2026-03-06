@@ -620,6 +620,20 @@
       ],
       "notes": "'Del now stirs a spoonful of Andrews into his brandy.' Peak Del - medicating and drinking at the same time.",
       "show_on_wheel": true
+    },
+    {
+      "id": "baileys-and-cherryade",
+      "drink": "Baileys and Cherryade",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "Heroes and Villains"
+        }
+      ],
+      "notes": "Del orders at the Nag's Head. Script says Manhattan but the broadcast has Baileys and Cherryade - David Jason ad-libbed the drink order.",
+      "show_on_wheel": true
     }
   ],
   "candidates": [
@@ -635,13 +649,6 @@
       "drink": "Irish Coffee",
       "status": "community_candidate",
       "notes": "Often mentioned in fan lists. Google AI claims S02E05 but not found in scripts.",
-      "show_on_wheel": false
-    },
-    {
-      "id": "baileys-and-cherryade",
-      "drink": "Baileys and Cherryade",
-      "status": "community_candidate",
-      "notes": "Fan-myth. No mention of Baileys in any script.",
       "show_on_wheel": false
     },
     {
