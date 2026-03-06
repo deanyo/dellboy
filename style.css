@@ -114,10 +114,12 @@ body::before {
 .spin-button:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 
 .result {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  z-index: 10; width: 85%; max-width: 380px;
   text-align: center; padding: 28px; border-radius: 16px;
-  background: var(--bg-2); border: 1px solid var(--accent);
-  box-shadow: 0 0 40px rgba(179, 244, 243, 0.1);
-  margin-bottom: 32px; animation: rise 0.4s ease;
+  background: rgba(26, 22, 33, 0.95); border: 1px solid var(--accent);
+  box-shadow: 0 0 60px rgba(179, 244, 243, 0.2);
+  backdrop-filter: blur(8px); animation: rise 0.4s ease;
 }
 
 .result.hidden { display: none; }
