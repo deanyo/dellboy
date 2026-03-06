@@ -215,12 +215,12 @@ const delProducts = [
 ];
 
 const delProductTemplates = [
-  { prefix: "Trotter's Independent", suffix: "Traders" },
-  { prefix: "Peckham", suffix: "" },
-  { prefix: "Trotter's", suffix: "" },
-  { prefix: "Del Boy's", suffix: "" },
-  { prefix: "TITCO", suffix: "" },
-  { prefix: "Nelson Mandela House", suffix: "" }
+  "Trotters Independent Traders",
+  "Peckham",
+  "Trotter's",
+  "Del Boy's",
+  "TITCO",
+  "Nelson Mandela House"
 ];
 
 const fakeDrinkProducts = [
@@ -267,7 +267,7 @@ function generateProduct() {
   }
   const tmpl = pick(delProductTemplates);
   const product = pick(fakeDrinkProducts);
-  const name = tmpl.suffix ? `${tmpl.prefix} ${product} ${tmpl.suffix}` : `${tmpl.prefix} ${product}`;
+  const name = `${tmpl} ${product}`;
   return { name, description: `"${pick(productSpiels)}"`, reality: pick(productRealities) };
 }
 
