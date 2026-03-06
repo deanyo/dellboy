@@ -606,6 +606,20 @@
       ],
       "notes": "Mike lists the round: 'a G&T for Raquel, a Tequila Slammer for Rodney, orange juice for Cassandra.'",
       "show_on_wheel": true
+    },
+    {
+      "id": "brandy-and-andrews",
+      "drink": "Brandy and Andrews",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "S06E05",
+          "title": "Sickness and Wealth"
+        }
+      ],
+      "notes": "'Del now stirs a spoonful of Andrews into his brandy.' Peak Del - medicating and drinking at the same time.",
+      "show_on_wheel": true
     }
   ],
   "candidates": [
