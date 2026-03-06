@@ -175,11 +175,6 @@
           "ref": "SPECIAL",
           "title": "Dates",
           "note": "'a Singapore sling for me and a small rum for Elton John'"
-        },
-        {
-          "ref": "SPECIAL",
-          "title": "Modern Men",
-          "note": "Part of Del's big celebration round"
         }
       ],
       "notes": "One of Del's recurring sophisticated orders.",
@@ -720,16 +715,25 @@
       "notes": "Grandad's substitute: 'they'd sold right out of Pina Coladas Del, so I got you a Mackeson instead.' A dark milk stout instead of a cocktail. Del accepts it without complaint.",
       "show_on_wheel": true,
       "type": "beer"
-    }
-  ],
-  "candidates": [
+    },
     {
       "id": "harvey-wallbanger",
       "drink": "Harvey Wallbanger",
-      "status": "community_candidate",
-      "notes": "Strongly associated with Del's yuppie phase but NOT in any script. In Yuppy Love he actually orders Beaujolais Nouveau and Spritzers.",
-      "show_on_wheel": false
-    },
+      "status": "confirmed",
+      "type": "classic_cocktail",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "Modern Men"
+        }
+      ],
+      "notes": "DVD subtitles: 'We've got a Harvey Wall Banger for me, that's a cognac for Boycie, vodka and lime for Marlene, Cubre Libre for Denzil...' Script says Singapore Sling but the broadcast has Harvey Wallbanger.",
+      "script_variant": "Singapore Sling",
+      "show_on_wheel": true
+    }
+  ],
+  "candidates": [
     {
       "id": "creme-de-menthe-and-tizer",
       "drink": "Creme de Menthe and Tizer",
