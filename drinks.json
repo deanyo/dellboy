@@ -22,6 +22,389 @@
       "show_on_wheel": true
     },
     {
+      "id": "tia-maria-and-lucozade",
+      "drink": "Tia Maria and Lucozade",
+      "status": "confirmed",
+      "ordered_by": "Del (via Rodney)",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "To Hull and Back",
+          "note": "'He doesn't know what it is, but he likes it.'"
+        },
+        {
+          "ref": "SPECIAL",
+          "title": "Time on Our Hands",
+          "note": "Del pours himself one at the cocktail bar. Still his go-to."
+        }
+      ],
+      "notes": "One of the signature Del drink gags. Appears in both the 1985 special and the 2003 finale.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "tequila-sunset",
+      "drink": "Tequila Sunset",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "S03E04",
+          "title": "Yesterday Never Comes"
+        }
+      ],
+      "notes": "Del's homemade cocktail - actually made with gin because he ran out of tequila.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "pina-colada",
+      "drink": "Pina Colada",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "S03E01",
+          "title": "Homesick",
+          "note": "'Tea, coffee, Pina Colada?'"
+        },
+        {
+          "ref": "S01E05",
+          "title": "A Slow Bus to Chingford",
+          "note": "Grandad tried to get one but they'd sold out - got him a Mackeson instead"
+        },
+        {
+          "ref": "S06E02",
+          "title": "Danger UXD",
+          "note": "'pina colada for me, please, Michael'"
+        },
+        {
+          "ref": "S06E05",
+          "title": "Sickness and Wealth",
+          "note": "'A pina colada for me Nerys'"
+        },
+        {
+          "ref": "SPECIAL",
+          "title": "The Jolly Boys' Outing",
+          "note": "'a couple of pina coladas'"
+        },
+        {
+          "ref": "SPECIAL",
+          "title": "Miami Twice",
+          "note": "fourteen pina coladas mentioned"
+        }
+      ],
+      "notes": "Del's most frequently ordered drink across the entire series.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "pina-colada-alka-seltzer",
+      "drink": "Pina Colada with Ice and Alka-Seltzer",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "Miami Twice"
+        }
+      ],
+      "notes": "After a heavy night: 'Juan. Can I have a pina colada with ice and Alka Seltzer?'",
+      "show_on_wheel": true
+    },
+    {
+      "id": "baileys-and-cherryade",
+      "drink": "Baileys and Cherryade",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "Heroes and Villains"
+        }
+      ],
+      "notes": "Del orders at the Nag's Head. Script says Manhattan but the broadcast has Baileys and Cherryade - David Jason ad-libbed the drink order.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "malibu-and-cherryade",
+      "drink": "Malibu and Cherryade",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "Dates"
+        }
+      ],
+      "notes": "'a Malibu and cherryade for moi, and one for yourself.'",
+      "show_on_wheel": true
+    },
+    {
+      "id": "campari-and-diet-coke",
+      "drink": "Campari and Diet Coke",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "S03E07",
+          "title": "Who's a Pretty Boy?"
+        }
+      ],
+      "notes": "Del's usual: 'Yeah, Campari and diet coke please!'",
+      "show_on_wheel": true
+    },
+    {
+      "id": "singapore-sling",
+      "drink": "Singapore Sling",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "S04E01",
+          "title": "Happy Returns",
+          "note": "'a Singapore Sling and half of Strongbow'"
+        },
+        {
+          "ref": "SPECIAL",
+          "title": "Dates",
+          "note": "'a Singapore sling for me and a small rum for Elton John'"
+        },
+        {
+          "ref": "SPECIAL",
+          "title": "Modern Men",
+          "note": "Part of Del's big celebration round"
+        }
+      ],
+      "notes": "One of Del's recurring sophisticated orders.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "manhattan",
+      "drink": "Manhattan",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "S05E06",
+          "title": "Who Wants to Be a Millionaire?",
+          "note": "'giss a Manhattan Mike, small rum for him. Spit in the rum.'"
+        },
+        {
+          "ref": "SPECIAL",
+          "title": "Heroes and Villains",
+          "note": "'for Rodney and a Manhattan for moi.'"
+        }
+      ],
+      "notes": "Ordered in two separate episodes.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "beaujolais-nouveau",
+      "drink": "Beaujolais Nouveau",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "S06E01",
+          "title": "Yuppy Love"
+        }
+      ],
+      "notes": "Del orders 'a bottle of Beaujolais Nouveau... a '79' - not realising Nouveau means this year's vintage.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "spritzer",
+      "drink": "Spritzer (\"Spitzer\")",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "S06E01",
+          "title": "Yuppy Love"
+        }
+      ],
+      "notes": "Del's yuppie phase: 'I never liked Spitzers before, but now I'm right into 'em.' Scene of the famous bar flap fall.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "bacardi-and-russian",
+      "drink": "Bacardi and Russian",
+      "status": "confirmed",
+      "ordered_by": "Referenced by barmaid",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "To Hull and Back"
+        }
+      ],
+      "notes": "Barmaid lists Del's recent drinks: 'Tuesday it was a Bacardi and Russian.'",
+      "show_on_wheel": true
+    },
+    {
+      "id": "grand-marnier-and-orange",
+      "drink": "Grand Marnier and Orange",
+      "status": "confirmed",
+      "ordered_by": "Referenced by barmaid",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "To Hull and Back"
+        }
+      ],
+      "notes": "'last week it was Grand Marnier and Orange.'",
+      "show_on_wheel": true
+    },
+    {
+      "id": "dubonnet-and-coke",
+      "drink": "Dubonnet and Coke",
+      "status": "confirmed",
+      "ordered_by": "Referenced by barmaid",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "To Hull and Back"
+        }
+      ],
+      "notes": "'the week before that was Dubonnet and Coke.'",
+      "show_on_wheel": true
+    },
+    {
+      "id": "half-a-lager",
+      "drink": "Half a Lager",
+      "status": "confirmed",
+      "ordered_by": "Rodney",
+      "episodes": [
+        {
+          "ref": "S01E02",
+          "title": "Go West Young Man"
+        }
+      ],
+      "notes": "Rodney's order after Del's elaborate Caribbean Stallion. The waiter mocks him: 'Half a lager... Reg Varney drank one of them in Holiday on the Buses!' - comparing Rodney to a naff 70s sitcom character.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "brandy-and-andrews",
+      "drink": "Brandy and Andrews",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "S06E05",
+          "title": "Sickness and Wealth"
+        }
+      ],
+      "notes": "'Del now stirs a spoonful of Andrews into his brandy.' Peak Del - medicating and drinking at the same time.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "rum-and-black",
+      "drink": "Rum and Black",
+      "status": "confirmed",
+      "ordered_by": "Albert / Del",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "A Royal Flush",
+          "note": "Albert accidentally orders 'a bum and rack!'"
+        },
+        {
+          "ref": "SPECIAL",
+          "title": "Modern Men",
+          "note": "Del orders 'A rum and Black for Bobby Crush' (Albert)"
+        }
+      ],
+      "notes": "Albert's drink - famously mispronounced.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "cuba-libre",
+      "drink": "Cuba Libre",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "S07E03",
+          "title": "Stage Fright",
+          "note": "'Blown it all on Cuba libres and lairy suits.'"
+        },
+        {
+          "ref": "SPECIAL",
+          "title": "Modern Men",
+          "note": "Del says 'Cubre Libre' - his mangled pronunciation"
+        }
+      ],
+      "notes": "Del pronounces it 'Cubre Libre'.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "armagnac",
+      "drink": "Armagnac",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "Mother Nature's Son"
+        }
+      ],
+      "notes": "Pam offers Armagnac. Del: 'Yeah, that'll do if you're out of brandy.' - not realising Armagnac IS brandy.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "vin-ordinaire",
+      "drink": "Vin Ordinaire",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "Christmas Crackers"
+        }
+      ],
+      "notes": "Del brags: 'I said get down that cellar and sort me out a bottle of Vin Ordinaire!' - thinking it means something posh.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "irish-coffee",
+      "drink": "Irish Coffee",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "SPECIAL",
+          "title": "Strangers on the Shore"
+        }
+      ],
+      "notes": "'Del had a mutton Madras and four Irish coffees.' Four of them. Classic Del.",
+      "show_on_wheel": true
+    },
+    {
+      "id": "peach-daiquiri",
+      "drink": "Peach Daiquiri",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "S07E01",
+          "title": "The Sky's the Limit"
+        }
+      ],
+      "notes": "'Give us a peach daiquiri and a chipolata sandwich.'",
+      "show_on_wheel": true
+    },
+    {
+      "id": "banana-daiquiri",
+      "drink": "Banana Daiquiri",
+      "status": "confirmed",
+      "ordered_by": "Del",
+      "episodes": [
+        {
+          "ref": "S05E06",
+          "title": "Who Wants to Be a Millionaire?"
+        }
+      ],
+      "notes": "'giss a banana daiquiri for us moi and Australian lager for Jumbo.' Mike: 'I only sell British lager, Del.'",
+      "show_on_wheel": true
+    },
+    {
       "id": "blackcurrant-and-pernod",
       "drink": "Blackcurrant and Pernod",
       "status": "confirmed",
@@ -47,20 +430,6 @@
         }
       ],
       "notes": "'Oi John. Giss a Remi Martin with cream soda and lots of ice, and 'arf of lager.'",
-      "show_on_wheel": true
-    },
-    {
-      "id": "vin-ordinaire",
-      "drink": "Vin Ordinaire",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "SPECIAL",
-          "title": "Christmas Crackers"
-        }
-      ],
-      "notes": "Del brags: 'I said get down that cellar and sort me out a bottle of Vin Ordinaire!' - thinking it means something posh.",
       "show_on_wheel": true
     },
     {
@@ -149,46 +518,6 @@
       "show_on_wheel": true
     },
     {
-      "id": "pina-colada",
-      "drink": "Pina Colada",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "S03E01",
-          "title": "Homesick",
-          "note": "'Tea, coffee, Pina Colada?'"
-        },
-        {
-          "ref": "S01E05",
-          "title": "A Slow Bus to Chingford",
-          "note": "Grandad tried to get one but they'd sold out - got him a Mackeson instead"
-        },
-        {
-          "ref": "S06E02",
-          "title": "Danger UXD",
-          "note": "'pina colada for me, please, Michael'"
-        },
-        {
-          "ref": "S06E05",
-          "title": "Sickness and Wealth",
-          "note": "'A pina colada for me Nerys'"
-        },
-        {
-          "ref": "SPECIAL",
-          "title": "The Jolly Boys' Outing",
-          "note": "'a couple of pina coladas'"
-        },
-        {
-          "ref": "SPECIAL",
-          "title": "Miami Twice",
-          "note": "fourteen pina coladas mentioned"
-        }
-      ],
-      "notes": "Del's most frequently ordered drink across the entire series.",
-      "show_on_wheel": true
-    },
-    {
       "id": "port-and-lemon",
       "drink": "Port and Lemon",
       "status": "confirmed",
@@ -206,59 +535,6 @@
         }
       ],
       "notes": "Offered by Del as a mixer option and ordered by Aunt Reen.",
-      "show_on_wheel": true
-    },
-    {
-      "id": "tequila-sunset",
-      "drink": "Tequila Sunset",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "S03E04",
-          "title": "Yesterday Never Comes"
-        }
-      ],
-      "notes": "Del's homemade cocktail - actually made with gin because he ran out of tequila.",
-      "show_on_wheel": true
-    },
-    {
-      "id": "campari-and-diet-coke",
-      "drink": "Campari and Diet Coke",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "S03E07",
-          "title": "Who's a Pretty Boy?"
-        }
-      ],
-      "notes": "Del's usual: 'Yeah, Campari and diet coke please!'",
-      "show_on_wheel": true
-    },
-    {
-      "id": "singapore-sling",
-      "drink": "Singapore Sling",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "S04E01",
-          "title": "Happy Returns",
-          "note": "'a Singapore Sling and half of Strongbow'"
-        },
-        {
-          "ref": "SPECIAL",
-          "title": "Dates",
-          "note": "'a Singapore sling for me and a small rum for Elton John'"
-        },
-        {
-          "ref": "SPECIAL",
-          "title": "Modern Men",
-          "note": "Part of Del's big celebration round"
-        }
-      ],
-      "notes": "One of Del's recurring sophisticated orders.",
       "show_on_wheel": true
     },
     {
@@ -290,68 +566,6 @@
       "show_on_wheel": true
     },
     {
-      "id": "bacardi-and-russian",
-      "drink": "Bacardi and Russian",
-      "status": "confirmed",
-      "ordered_by": "Referenced by barmaid",
-      "episodes": [
-        {
-          "ref": "SPECIAL",
-          "title": "To Hull and Back"
-        }
-      ],
-      "notes": "Barmaid lists Del's recent drinks: 'Tuesday it was a Bacardi and Russian.'",
-      "show_on_wheel": true
-    },
-    {
-      "id": "grand-marnier-and-orange",
-      "drink": "Grand Marnier and Orange",
-      "status": "confirmed",
-      "ordered_by": "Referenced by barmaid",
-      "episodes": [
-        {
-          "ref": "SPECIAL",
-          "title": "To Hull and Back"
-        }
-      ],
-      "notes": "'last week it was Grand Marnier and Orange.'",
-      "show_on_wheel": true
-    },
-    {
-      "id": "dubonnet-and-coke",
-      "drink": "Dubonnet and Coke",
-      "status": "confirmed",
-      "ordered_by": "Referenced by barmaid",
-      "episodes": [
-        {
-          "ref": "SPECIAL",
-          "title": "To Hull and Back"
-        }
-      ],
-      "notes": "'the week before that was Dubonnet and Coke.'",
-      "show_on_wheel": true
-    },
-    {
-      "id": "tia-maria-and-lucozade",
-      "drink": "Tia Maria and Lucozade",
-      "status": "confirmed",
-      "ordered_by": "Del (via Rodney)",
-      "episodes": [
-        {
-          "ref": "SPECIAL",
-          "title": "To Hull and Back",
-          "note": "'He doesn't know what it is, but he likes it.'"
-        },
-        {
-          "ref": "SPECIAL",
-          "title": "Time on Our Hands",
-          "note": "Del pours himself one at the cocktail bar. Still his go-to."
-        }
-      ],
-      "notes": "One of the signature Del drink gags. Appears in both the 1985 special and the 2003 finale.",
-      "show_on_wheel": true
-    },
-    {
       "id": "courvoisier",
       "drink": "Courvoisier",
       "status": "confirmed",
@@ -366,40 +580,6 @@
       "show_on_wheel": true
     },
     {
-      "id": "manhattan",
-      "drink": "Manhattan",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "S05E06",
-          "title": "Who Wants to Be a Millionaire?",
-          "note": "'giss a Manhattan Mike, small rum for him. Spit in the rum.'"
-        },
-        {
-          "ref": "SPECIAL",
-          "title": "Heroes and Villains",
-          "note": "'for Rodney and a Manhattan for moi.'"
-        }
-      ],
-      "notes": "Ordered in two separate episodes.",
-      "show_on_wheel": true
-    },
-    {
-      "id": "banana-daiquiri",
-      "drink": "Banana Daiquiri",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "S05E06",
-          "title": "Who Wants to Be a Millionaire?"
-        }
-      ],
-      "notes": "'giss a banana daiquiri for us moi and Australian lager for Jumbo.' Mike: 'I only sell British lager, Del.'",
-      "show_on_wheel": true
-    },
-    {
       "id": "benedictine-and-lemonade",
       "drink": "Benedictine and Lemonade",
       "status": "confirmed",
@@ -411,82 +591,6 @@
         }
       ],
       "notes": "June's drink of choice - she totters in with a glass of it.",
-      "show_on_wheel": true
-    },
-    {
-      "id": "rum-and-black",
-      "drink": "Rum and Black",
-      "status": "confirmed",
-      "ordered_by": "Albert / Del",
-      "episodes": [
-        {
-          "ref": "SPECIAL",
-          "title": "A Royal Flush",
-          "note": "Albert accidentally orders 'a bum and rack!'"
-        },
-        {
-          "ref": "SPECIAL",
-          "title": "Modern Men",
-          "note": "Del orders 'A rum and Black for Bobby Crush' (Albert)"
-        }
-      ],
-      "notes": "Albert's drink - famously mispronounced.",
-      "show_on_wheel": true
-    },
-    {
-      "id": "malibu-and-cherryade",
-      "drink": "Malibu and Cherryade",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "SPECIAL",
-          "title": "Dates"
-        }
-      ],
-      "notes": "'a Malibu and cherryade for moi, and one for yourself.'",
-      "show_on_wheel": true
-    },
-    {
-      "id": "beaujolais-nouveau",
-      "drink": "Beaujolais Nouveau",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "S06E01",
-          "title": "Yuppy Love"
-        }
-      ],
-      "notes": "Del orders 'a bottle of Beaujolais Nouveau... a '79' - not realising Nouveau means this year's vintage.",
-      "show_on_wheel": true
-    },
-    {
-      "id": "spritzer",
-      "drink": "Spritzer (\"Spitzer\")",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "S06E01",
-          "title": "Yuppy Love"
-        }
-      ],
-      "notes": "Del's yuppie phase: 'I never liked Spitzers before, but now I'm right into 'em.' Scene of the famous bar flap fall.",
-      "show_on_wheel": true
-    },
-    {
-      "id": "pina-colada-alka-seltzer",
-      "drink": "Pina Colada with Ice and Alka-Seltzer",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "SPECIAL",
-          "title": "Miami Twice"
-        }
-      ],
-      "notes": "After a heavy night: 'Juan. Can I have a pina colada with ice and Alka Seltzer?'",
       "show_on_wheel": true
     },
     {
@@ -518,34 +622,6 @@
       "show_on_wheel": true
     },
     {
-      "id": "armagnac",
-      "drink": "Armagnac",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "SPECIAL",
-          "title": "Mother Nature's Son"
-        }
-      ],
-      "notes": "Pam offers Armagnac. Del: 'Yeah, that'll do if you're out of brandy.' - not realising Armagnac IS brandy.",
-      "show_on_wheel": true
-    },
-    {
-      "id": "peach-daiquiri",
-      "drink": "Peach Daiquiri",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "S07E01",
-          "title": "The Sky's the Limit"
-        }
-      ],
-      "notes": "'Give us a peach daiquiri and a chipolata sandwich.'",
-      "show_on_wheel": true
-    },
-    {
       "id": "large-snowball",
       "drink": "Large Snowball",
       "status": "confirmed",
@@ -557,26 +633,6 @@
         }
       ],
       "notes": "'How about a large snowball? Mike, a large snowball for Dora, please.'",
-      "show_on_wheel": true
-    },
-    {
-      "id": "cuba-libre",
-      "drink": "Cuba Libre",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "S07E03",
-          "title": "Stage Fright",
-          "note": "'Blown it all on Cuba libres and lairy suits.'"
-        },
-        {
-          "ref": "SPECIAL",
-          "title": "Modern Men",
-          "note": "Del says 'Cubre Libre' - his mangled pronunciation"
-        }
-      ],
-      "notes": "Del pronounces it 'Cubre Libre'.",
       "show_on_wheel": true
     },
     {
@@ -605,62 +661,6 @@
         }
       ],
       "notes": "Mike lists the round: 'a G&T for Raquel, a Tequila Slammer for Rodney, orange juice for Cassandra.'",
-      "show_on_wheel": true
-    },
-    {
-      "id": "brandy-and-andrews",
-      "drink": "Brandy and Andrews",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "S06E05",
-          "title": "Sickness and Wealth"
-        }
-      ],
-      "notes": "'Del now stirs a spoonful of Andrews into his brandy.' Peak Del - medicating and drinking at the same time.",
-      "show_on_wheel": true
-    },
-    {
-      "id": "baileys-and-cherryade",
-      "drink": "Baileys and Cherryade",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "SPECIAL",
-          "title": "Heroes and Villains"
-        }
-      ],
-      "notes": "Del orders at the Nag's Head. Script says Manhattan but the broadcast has Baileys and Cherryade - David Jason ad-libbed the drink order.",
-      "show_on_wheel": true
-    },
-    {
-      "id": "irish-coffee",
-      "drink": "Irish Coffee",
-      "status": "confirmed",
-      "ordered_by": "Del",
-      "episodes": [
-        {
-          "ref": "SPECIAL",
-          "title": "Strangers on the Shore"
-        }
-      ],
-      "notes": "'Del had a mutton Madras and four Irish coffees.' Four of them. Classic Del.",
-      "show_on_wheel": true
-    },
-    {
-      "id": "half-a-lager",
-      "drink": "Half a Lager",
-      "status": "confirmed",
-      "ordered_by": "Rodney",
-      "episodes": [
-        {
-          "ref": "S01E02",
-          "title": "Go West Young Man"
-        }
-      ],
-      "notes": "Rodney's order after Del's elaborate Caribbean Stallion. The waiter mocks him: 'Half a lager... Reg Varney drank one of them in Holiday on the Buses!' - comparing Rodney to a naff 70s sitcom character.",
       "show_on_wheel": true
     },
     {
